@@ -1,0 +1,119 @@
+{
+  "phase": "03_SlabAndFoundationRoughIn",
+  "version": "1.0.0",
+  "metadata": {
+    "title": "Slab and Foundation Rough-In",
+    "description": "Schema for electrical rough-in work in slab and foundation installations",
+    "lastUpdated": "2024-03-21"
+  },
+  "requirements": {
+    "materials": {
+      "conduit": {
+        "type": "Schedule 40 PVC",
+        "specifications": {
+          "size": ["1/2\"", "3/4\"", "1\"", "1-1/4\"", "1-1/2\"", "2\""],
+          "color": "Gray",
+          "rating": "UL Listed"
+        }
+      },
+      "grounding": {
+        "conductors": {
+          "type": "Bare Copper",
+          "sizes": ["#6", "#4", "#2", "1/0"],
+          "specifications": "ASTM B3"
+        },
+        "clamps": {
+          "type": "Bronze",
+          "sizes": ["1/2\"", "3/4\"", "1\"", "1-1/4\""]
+        }
+      }
+    },
+    "tools": {
+      "required": [
+        "Conduit Bender",
+        "Core Drill",
+        "Ground Resistance Tester",
+        "Layout Tools",
+        "Safety Equipment"
+      ],
+      "optional": [
+        "Laser Level",
+        "Total Station",
+        "Pipe Threader"
+      ]
+    }
+  },
+  "safety": {
+    "ppe": [
+      "Hard Hat",
+      "Safety Glasses",
+      "Steel-toe Boots",
+      "High-visibility Vest",
+      "Gloves"
+    ],
+    "procedures": [
+      "Trench Safety",
+      "Confined Space Entry",
+      "Heavy Equipment Operation",
+      "Fall Protection",
+      "Electrical Safety"
+    ]
+  },
+  "qualityControl": {
+    "inspectionPoints": [
+      {
+        "name": "Conduit Placement",
+        "criteria": [
+          "Proper spacing",
+          "Correct elevation",
+          "Adequate support",
+          "Proper bends"
+        ]
+      },
+      {
+        "name": "Grounding System",
+        "criteria": [
+          "Proper conductor size",
+          "Adequate connections",
+          "Ground resistance values",
+          "Bonding requirements"
+        ]
+      }
+    ],
+    "documentation": [
+      "As-built Drawings",
+      "Inspection Reports",
+      "Material Certifications",
+      "Test Results",
+      "Change Orders"
+    ]
+  },
+  "timeline": {
+    "estimatedDuration": "X days",
+    "milestones": [
+      {
+        "name": "Conduit Installation",
+        "duration": "X days",
+        "dependencies": []
+      },
+      {
+        "name": "Grounding System",
+        "duration": "X days",
+        "dependencies": ["Conduit Installation"]
+      }
+    ]
+  },
+  "compliance": {
+    "standards": [
+      "NEC 2023",
+      "OSHA Regulations",
+      "Local Building Codes",
+      "Project Specifications"
+    ],
+    "certifications": [
+      "UL Listed",
+      "FM Approved",
+      "Local Authority Approval"
+    ]
+  }
+} 
