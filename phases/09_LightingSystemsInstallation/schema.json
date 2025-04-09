@@ -1,0 +1,113 @@
+{
+    "phase_name": "Lighting Systems Installation",
+    "critical_steps_checklist": [
+      "Verify fixture locations and types against plans (reflected ceiling plan and lighting schedule)",
+      "Stage fixtures, hardware, and materials at the site near install areas",
+      "Install raceways or cables to lighting points (conduits, cable whips, etc.)",
+      "Mount fixtures securely (follow mounting method for each type)",
+      "Perform wiring connections (line, neutral, ground, control wires) per code",
+      "Integrate lighting controls (occupancy sensors, switches, dimmers, etc.)",
+      "Test each fixture and control for proper operation and code compliance"
+    ],
+    "materials": [
+      {
+        "item": "2x4 LED Troffer Fixture",
+        "spec": "Recessed, 120-277V LED 4000K 5000lm",
+        "quantity": 48
+      },
+      {
+        "item": "High-Bay LED Fixture",
+        "spec": "150W pendant mount, 277V, 18,000lm",
+        "quantity": 20
+      },
+      {
+        "item": "Outdoor Pole Light Fixture",
+        "spec": "LED 200W 277V with 25ft steel pole",
+        "quantity": 8
+      },
+      {
+        "item": "EMT Conduit",
+        "spec": "3/4\" Electrical Metallic Tubing",
+        "quantity": 3000
+      },
+      {
+        "item": "THHN Wire",
+        "spec": "#12 AWG copper, 600V, various colors",
+        "quantity": 10000
+      },
+      {
+        "item": "Flex Whip",
+        "spec": "6 ft prewired f&#8203;:contentReference[oaicite:0]{index=0}conduit, 3-wire (12 AWG)",
+        "quantity": 50
+      },
+      {
+        "item": "Occupancy Sensor (Ceiling)",
+        "spec": "Dual-tech 360° sensor, 24V with power pack",
+        "quantity": 12
+      },
+      {
+        "item": "Wall Switch (Decorator style)",
+        "spec": "120/277V, single-pole, with neutral terminal",
+        "quantity": 40
+      }
+    ],
+    "code_references": [
+      "NEC 210.6(A): 120V max for lighting in dwelling/guest rooms (277V allowed in commercial)【12†L163-L170】",
+      "NEC 210.6(C): 277V circuits cannot use standard screw-base lamps (mogul base required)【12†L212-L220】",
+      "NEC 410.36(B): Luminaires in suspended ceilings must be securely fastened (e.g. independent support wires)",
+      "NEC 410.71 (formerly 410.130(G)): Fluorescent/LED fixtures need a disconnecting means for ballasts/drivers【32†L28-L36】",
+      "NEC 404.2(C): Neutral (grounded conductor) required at most light switch locations (for sensors, etc.)【4†L7-L15】",
+      "NEC 725.136: Class 2 low-voltage control wiring can share enclosures with power conductors only with separation or insulation rules【14†L372-L381】【14†L382-L390】",
+      "Chicago Electrical Code 18-27-300.22: Chicago plenum (CCEA) requires sealed, all-metal enclosures in air-handling spaces【35†L83-L92】【35†L93-L99】",
+      "Chicago Code (Amendments): All high- and low-voltage wiring in commercial buildings must be in conduit; non-metallic conduit and cable are heavily restricted【35†L23-L30】"
+    ],
+    "trade_coordination": [
+      "Ceilings: Coordinate fixture installation with ceiling grid or drywall installation (install supports before ceilings close up)",
+      "HVAC: Avoid conflicts with ductwork and air vents; ensure plenum-rated fixtures and devices where required",
+      "Fire Protection: Maintain required clearances from sprinklers; install seismic support wires if required by code or spec",
+      "Low Voltage/Controls: Work with controls contractor or integrator for sensor placement and connection (e.g. BMS tie-ins)",
+      "General Contractor: Schedule lifts or scaffolds usage with other trades; ensure power is available (or off) as needed for testing and safe work"
+    ],
+    "common_pitfalls": [
+      "Misaligned fixtures (not following reflected ceiling plan or grid layout)",
+      "Mixing different circuit voltages in one box without proper separation or labeling (e.g. 277V and 120V together)",
+      "Forgetting neutral conductors at switch locations for sensors (violates NEC 404.2(C)【4†L7-L15】)",
+      "Improper support of fixtures (using ceiling grid only without independent support wires or brackets)",
+      "Incorrect wiring of 3-way or 4-way switching and sensor override circuits (causing non-functioning controls)",
+      "Failing to install required ballast/driver disconnects, leading to inspection issues【32†L28-L36】",
+      "Not using plenum-rated or code-compliant materials above ceiling (especially in Chicago, violating CCEA requirements)"
+    ],
+    "labor_units": [
+      {
+        "task": "Recessed 2x4 Troffer Install (LED)",
+        "NECA_normal_hours": 0.8,
+        "NECA_difficult_hours": 1.0,
+        "notes": "Normal ~0.75-0.85h per fixture【18†L14-L18】; increase if high ceiling or tight space"
+      },
+      {
+        "task": "High-Bay Fixture Install (pendant, 18 ft height)",
+        "NECA_normal_hours": 1.5,
+        "NECA_difficult_hours": 1.9,
+        "notes": "Includes mounting and wiring at height; use lift for efficiency"
+      },
+      {
+        "task": "Install 6' Flex Whip (pre-wired)",
+        "NECA_normal_hours": 0.25,
+        "NECA_difficult_hours": 0.35,
+        "notes": "Prefabricated whips save time (NECA base ~0.25h each)【19†L51-L59】"
+      },
+      {
+        "task": "Pole Light Fixture & Pole Setup",
+        "NECA_normal_hours": 4.0,
+        "NECA_difficult_hours": 5.5,
+        "notes": "Excludes concrete base; includes setting pole, wiring fixture, aiming"
+      },
+      {
+        "task": "Wall Occupancy Sensor Install",
+        "NECA_normal_hours": 0.3,
+        "NECA_difficult_hours": 0.5,
+        "notes": "Slightly more than a standard switch due to adjustment/testing"
+      }
+    ]
+  }
+  

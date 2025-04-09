@@ -1,0 +1,105 @@
+{
+    "checklist": [
+      "Verify all low-voltage device locations (outlets, cameras, APs, panels) per plans before starting.",
+      "Install required backboxes or mud rings at each device location (ensure correct height/depth).",
+      "Run conduits or raceways where required (e.g. stubs from outlet boxes to accessible ceilings).",
+      "Install cable support hardware (J-hooks, cable tray, straps) along planned routes.",
+      "Pull the specified cables to each location (no damage, kinks, or excessive tension).",
+      "Maintain proper separation from power circuits and avoid sharp bends (per code).",
+      "Secure and dress cables neatly on supports (bundle loosely with Velcro, no sagging).",
+      "Label cables at both ends and leave service loops as specified (e.g. 1-2 feet extra at endpoints).",
+      "Firestop any penetrations through fire-rated walls after pulling is complete.",
+      "Conduct a visual QC inspection: supports spaced correctly, plenum cable used where required, no code violations.",
+      "Ensure documentation is updated with any field changes before sign-off."
+    ],
+    "materials": [
+      {
+        "item": "CAT6 Data Cable (Plenum-rated)",
+        "specs": "23 AWG UTP, CMP rated for plenum use",
+        "typ_quantity_per_100ft": "100 ft per run (plus ~10% slack)",
+        "notes": "Use plenum (CMP) in air-handling spaces; riser (CMR) or general (CM) elsewhere as allowed."
+      },
+      {
+        "item": "Fire Alarm Cable (FPLP)",
+        "specs": "18 AWG 2-conductor shielded, Plenum rated",
+        "typ_quantity_per_100ft": "100 ft per device loop (plus service slack)",
+        "notes": "FPLP = plenum fire alarm cable per NEC 760; red jacket for identification."
+      },
+      {
+        "item": "Conduit (EMT) 3/4 inch",
+        "specs": "Electrical metallic tubing, steel",
+        "typ_quantity_per_100ft": "N/A (used as needed for protection or where code requires)",
+        "notes": "Chicago code often requires metallic conduit for exposed runs【32†L94-L102】; use to sleeve cables in walls or harsh areas."
+      },
+      {
+        "item": "J-Hooks, 2 inch diameter",
+        "specs": "Supports ~50 cables, steel, beam clamp or rod mount",
+        "typ_quantity_per_100ft": "Approx. 1 hook every 4-5 feet of run",
+        "notes": "Primary support for horizontal cabling; maintain spacing per code (<=5ft to prevent sag)【29†L31-L38】."
+      },
+      {
+        "item": "Cable Tray, 12-inch width",
+        "specs": "Ladder tray, aluminum, 12\" W x 4\" D",
+        "typ_quantity_per_100ft": "100 ft (continuous along corridor or telecom room routes)",
+        "notes": "Used for high-volume cable pathways; must be properly suspended and bonded to ground."
+      },
+      {
+        "item": "Velcro Cable Wraps",
+        "specs": "Hook and loop ties, 0.5\" width, reusable",
+        "typ_quantity_per_100ft": "1 pack per 100ft (space wraps ~3-4ft apart on bundles)",
+        "notes": "Preferred over zip-ties for data cables to avoid over-cinching and performance loss."
+      },
+      {
+        "item": "Anchors and Fasteners",
+        "specs": "#8 screws, drop-in anchors for concrete, etc.",
+        "typ_quantity_per_100ft": "Varies (each J-hook or strap requires anchor hardware)",
+        "notes": "Select fastener type based on base material (concrete, steel, wood); ensure secure mounting of supports."
+      }
+    ],
+    "code_references": {
+      "NEC (NFPA 70)": [
+        "NEC 720.11: <50V wiring must be neat & supported (workmanlike)【41†L15-L23】",
+        "NEC 300.11(A): Cables independently supported (not on ceiling grid/duct)【18†L9-L16】",
+        "NEC 300.4: Protect cables through metal studs (bushings/grommets to prevent damage)",
+        "NEC 725 & 800: Use proper class/type cables (CL2/CL3, CM/CMR/CMP) & separation from power【18†L11-L16】【18†L29-L36】",
+        "NEC 760: Fire alarm circuits requirements (PLFA cables, or in conduit if required by local code)",
+        "NEC 800.133(C): Don’t strap comm cables to conduits or electric masts (separate support)【18†L29-L36】"
+      ],
+      "Chicago Electrical Code": [
+        "All wiring (incl. LV) in metallic conduit by default【32†L94-L102】 (strict fire safety tradition).",
+        "Exception: Concealed low-voltage cabling allowed without conduit if in walls or above hard ceilings (must be plenum-rated above ceilings).",
+        "<50V circuits must be neat, supported at least every 6 feet, and run parallel/perpendicular to structure (no sprawling)【23†L25-L33】.",
+        "Use of ‘Chicago Plenum’ rated materials in environmental air spaces (UL 2043 compliance)【28†L211-L219】 – plenum cables and enclosures required.",
+        "Low-voltage installer licensing: Must be a licensed electrical (low-voltage) contractor to install LV in Chicago【19†L33-L37】 (ensures qualified installation)."
+      ]
+    },
+    "trade_coordination": [
+      "HVAC: Plan cable routes around ducts; avoid blocking access panels. Use independent hangers (do NOT zip-tie to ductwork or ceiling hangers)【18†L9-L16】.",
+      "Sprinkler: Never attach cables to sprinkler pipes or supports (fire code violation); coordinate to keep cable clear of sprinkler heads (typically 18\" clearance).",
+      "Framing/Drywall: Install any low-voltage conduit stubs or boxes in studs before walls are closed. Communicate locations of wall devices to framers.",
+      "Ceiling Grid: Try to pull cables before ceiling tiles go in. If after, work with ceiling installers to remove/reinstall tiles. Keep cables above T-bars, not resting on them.",
+      "Electrical/Lighting: Coordinate with high-voltage electricians so data/fire cabling isn’t run in the same conduit or box as power (maintain code-required separation).",
+      "Security/AV: If other specialty contractors are involved (security, AV, etc.), define responsibilities clearly (who pulls which cable) to avoid doubling or omissions."
+    ],
+    "common_pitfalls": [
+      "Inadequate cable support – e.g., cables sagging or draped over ceiling grid. *Solution:* Follow code support intervals (J-hooks ~4-5ft apart) and add supports as needed【29†L31-L38】. Never use unauthorized supports like sprinkler pipes【18†L9-L16】.",
+      "Pulling cables too forcefully or with sharp bends – leads to damaged conductors and performance issues. *Solution:* Observe bend radius limits (typically 4x cable diameter for UTP), use a second person or proper fish tape to reduce tension, and apply lubricant for tight conduit pulls.",
+      "Not using plenum-rated cable in plenum spaces – a code violation that can fail inspection. *Solution:* Always check the ceiling type: if return air plenums are present, use CMP (plenum) cables or run in conduit per code【25†L15-L23】. When in doubt, err on side of plenum cable.",
+      "Insufficient slack or service loop at terminations – cables cut too short can be impossible to terminate properly. *Solution:* Leave extra coil (e.g., 1-2 feet in wall/ceiling, more in telecom rooms) for future re-terminations or device relocation.",
+      "Lack of cable identification – forgetting to label runs during rough-in leads to confusion and hours of tone tracing later. *Solution:* Tag both ends of each cable with a permanent label (per labeling scheme) immediately after pulling. Keep a ledger of cable numbers and destinations.",
+      "Ignoring other trades’ space – e.g., running cables through an area soon to be occupied by a duct or blocking an access way. *Solution:* Proactively review mechanical/plumbing plans and coordinate in weekly meetings. Route cables in **dedicated corridors or predefined chases** when available."
+    ],
+    "labor_units_neca": {
+      "Pulling CAT6 in 3/4\" EMT (3 cables)": "≈7 hours per 1000 ft (Normal conditions)【13†L226-L234】",
+      "Pulling CAT6 free-air (with J-hooks)": "≈14 hours per 1000 ft (about 2x conduit labor)【13†L226-L234】",
+      "Installing J-Hook Support": "≈0.05 hours each (3 min per hook in Normal conditions)",
+      "Installing 3/4\" EMT conduit": "≈0.2 hours per foot (includes bends and support clips)",
+      "Mounting Outlet Backbox (low-voltage ring)": "≈0.2 hours each (Normal; wall stud or ceiling tile mounting)",
+      "Firestopping Cable Penetration": "≈0.1 hours each (Small bundle with putty)",
+      "Termination (RJ45 data jack, not part of rough-in)": "≈0.3 hours each (for reference, done in trim phase)",
+      "Adjustment - Height > 12 ft": "+5%–10% labor time (working on ladder/lift at 12–16 ft height)【50†L32-L40】",
+      "Adjustment - Difficult Access/Congested": "+20% or more (tight spaces, many trades present)【13†L269-L277】",
+      "Adjustment - Overtime Work": "Reduce productivity by ~20% (fatigue factor, per NECA guidelines)"
+    }
+  }
+  

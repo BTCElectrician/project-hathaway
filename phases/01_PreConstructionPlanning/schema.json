@@ -1,0 +1,51 @@
+{
+  "phase": "Pre-Construction & Planning",
+  "checklist": [
+    "Review electrical drawings, specs, and scope thoroughly and identify access or layout issues",
+    "Plan conduit/routes: overhead, underground, wall rough-ins",
+    "Identify long lead items (gear, fixtures) and initiate procurement",
+    "Hold coordination meeting with other trades (MEP coordination)",
+    "Verify code requirements (NEC & local amendments) for planned work",
+    "Develop material take-off and tool/equipment list",
+    "Create a crew schedule and labor estimate using NECA units",
+    "Prepare safety plan"
+  ],
+  "common_materials": {
+    "EMT 3/4-inch conduit": "10 x 10ft lengths per 100ft run (with spares for waste)",
+    "THHN #12 copper wire": "3 conductors (300 ft total) per 100ft branch circuit",
+    "4-inch square metal box": "1 per ~50 ft or per device location",
+    "One-hole conduit straps": "10–12 per 100ft of conduit (support every 10 ft)",
+    "Concrete anchors (for supports)": "2 per conduit strap or hanger",
+    "NEC-compliant connectors/couplings": "2 per conduit length (set-screw or compression type)"
+  },
+  "code_references": [
+    "NEC 110.26: Working space clearance (e.g. 3 ft in front of panels)",
+    "NEC 300.5(D)(2) (Chicago): Require RMC/IMC at building entry【24†L159-L167】",
+    "NEC 517: Hospital essential systems (Life Safety, Critical, Equipment branches)",
+    "Chicago 210.12(A) Ex.1: No AFCI required if in EMT/Rigid conduit【16†L595-L603】"
+  ],
+  "trade_coordination": [
+    "General Contractor – schedule, site access, concrete pour dates for embeds",
+    "Mechanical (HVAC) – ceiling space and shaft coordination for conduits vs ducts",
+    "Plumbing – slab penetrations/sleeves and avoiding pipe conflicts",
+    "Fire Protection – clearances for sprinkler mains and fire alarm devices",
+    "Low Voltage/IT – sharing pathways, electrical room space for IT racks",
+    "Utility Company – service entrance requirements and meter vault coordination"
+  ],
+  "common_pitfalls": [
+    "Incomplete drawing review leading to missed scope (solution: page-by-page plan review with RFIs for unclear areas)",
+    "Underestimating material lead times (solution: order switchgear, generators early and track procurement)",
+    "Poor trade coordination (solution: attend BIM/coordination meetings, use 3D models to catch conflicts early)",
+    "Ignoring code requirements (solution: consult NEC/Chicago code for every design choice – e.g. GFCI, clearance, fire rating)",
+    "Improper labor estimate (solution: use NECA labor units and adjust for project difficulty factors【23†L156-L164】)"
+  ],
+  "labor_units_estimated": {
+    "EMT conduit 1/2-inch (per 100 ft)": "2.5 hours (NECA Normal)【32†L55-L63】",
+    "EMT conduit 3/4-inch (per 100 ft)": "3.3 hours (NECA Normal, approx.)",
+    "Rigid steel conduit 3/4-inch (per 100 ft)": "4–7 hours (varies by height)【6†L223-L231】",
+    "Pulling 3#10 AWG wires (100 ft run)": "6 hours (0.06 h/ft for three conductors)【6†L279-L284】",
+    "Set-screw connector/coupling 1/2-inch": "0.05 hours each (≈3 minutes)【32†L57-L65】",
+    "J-box (4\" sq) installation": "0.2 hours each (including support attachment)",
+    "225A Panelboard install": "4 hours (mounting & terminations, baseline)"
+  }
+}

@@ -1,0 +1,105 @@
+{
+    "phase_name": "Trim-Out & Device Installation",
+    "critical_checklist_steps": [
+      "Ensure all building finishes (paint, drywall) are ready and power is de-energized for work",
+      "Install and terminate wiring devices (receptacles, switches, etc.) per circuit plan",
+      "Install lighting fixtures and connect to branch circuits as specified",
+      "Attach and align faceplates, trim panels, and secure all device covers",
+      "Test all devices/circuits (use testers for GFCI/AFCI) and label panels",
+      "Perform quality control walk-through before inspection (check grounding, torque, alignment, code compliance)"
+    ],
+    "common_materials": [
+      {
+        "item": "Duplex Receptacle, 20A Spec-Grade (Commercial Duty)",
+        "spec": "NEMA 5-20R, self-grounding clip",
+        "est_quantity_per_100ft_wall": 8
+      },
+      {
+        "item": "Toggle Switch, 20A Spec-Grade (Single-Pole or 3-Way)",
+        "spec": "120/277V AC rated",
+        "est_quantity": "1 per room or zone (varies by lighting layout)"
+      },
+      {
+        "item": "Faceplate (Cover Plate), 1-Gang, Thermoplastic or Stainless",
+        "spec": "UL listed, standard size (4.5\" x 2.75\")",
+        "est_quantity": "Matches device count (one per switch/receptacle opening)"
+      },
+      {
+        "item": "Twist-on Wire Connectors (Wire Nuts, Ideal/3M)",
+        "spec": "Size for #12 AWG (e.g. red/yellow)",
+        "est_quantity": "2-3 per device connection (approx. 16-24 per 100ft of outlets)"
+      },
+      {
+        "item": "Device Mounting Screws 6-32 x 1/2\"",
+        "spec": "Machine thread, zinc plated",
+        "est_quantity": "Typically included with devices/boxes; have spares for ~10% of devices"
+      },
+      {
+        "item": "Insulating Tape & Misc (3M vinyl electrical tape, nylon zip ties)",
+        "spec": "3/4\" tape for wrapping terminals, 8\" UV-rated zip ties for dressing cables",
+        "est_quantity": "1 roll tape per 100 devices; 1 zip tie per box (as needed to bundle wires)"
+      }
+    ],
+    "NEC_code_references": [
+      "NEC 110.12 (Neat and workmanlike installation)",
+      "NEC 110.14 (Proper terminations and torque on device screws)",
+      "NEC 300.14 (6-inch minimum free conductor at outlet boxes)",
+      "NEC 314.16 (Outlet box fill capacity for conductors and devices)",
+      "NEC 314.20 (Flush-mount boxes must be even with finished surface)",
+      "NEC 406.5 (Receptacle mounting and use of 6-32 screws)",
+      "NEC 406.6 (Faceplates must cover opening; metal plates must be grounded)",
+      "NEC 250.146 (Bonding of receptacle to metal box via jumper or listed self-grounding)",
+      "NEC 210.8 & 210.12 (GFCI/AFCI requirements for receptacles in specific areas)",
+      "NEC 517.13 (Hospital-grade receptacles and redundant grounding in patient care areas)",
+      "NEC 408.4 (Circuit directory labeling in panels)"
+    ],
+    "Chicago_code_references": [
+      "Chicago 14E-3-334 (NM cable usage heavily restricted – essentially prohibited except temp)",
+      "Chicago 14E-3-310 (Max 9 conductors in a conduit; amended derating rules)",
+      "Chicago Amendment - All wiring in metal conduit/raceway (no NM, AC, MC in permanent work)",
+      "Chicago Amendment - Low-voltage and doorbell wiring in conduit (special local practice)",
+      "Chicago uses NEC 2017 with ~150 pages of stricter amendments (grounding, wiring methods)"
+    ],
+    "trade_coordination_needs": [
+      "Schedule trim-out after drywall and painting to avoid damage to devices/plates",
+      "Coordinate with ceiling installers: drop-in light fixtures go in after grid is in place",
+      "Work with HVAC/plumbing to ensure overhead space is clear for fixture installation",
+      "Communicate with carpenters if cabinetry or millwork affects device locations or access",
+      "Keep circuits de-energized to allow other trades to work safely nearby until final testing"
+    ],
+    "common_pitfalls": [
+      "Device misalignment or protruding from wall due to improperly set boxes",
+      "Over-tightening device screws causing cracked plates or stripped threads",
+      "Loose connections from under-torqued terminal screws leading to hot spots",
+      "Mixing up wiring on multi-way switches or receptacles (resulting in malfunction)",
+      "Failing to install required GFCI/AFCI or tamper-resistant devices per code",
+      "Neglecting to attach ground pigtails where needed (assuming conduit alone is enough)"
+    ],
+    "labor_units": [
+      {
+        "task": "Install duplex receptacle (terminate 3 conductors + mount + cover)",
+        "NECA_norm_hours": 0.3,
+        "NECA_ref": "NECA MLU 'Normal' condition ~18 minutes per outlet【25†L1-L4】"
+      },
+      {
+        "task": "Install single-pole switch (terminate 2-3 conductors + mount + cover)",
+        "NECA_norm_hours": 0.2,
+        "NECA_ref": "Estimated ~12 minutes each (similar to receptacle; slightly less wiring)"
+      },
+      {
+        "task": "Install 2x4 LED troffer fixture (prewired whip to junction box)",
+        "NECA_norm_hours": 0.8,
+        "NECA_ref": "Estimated ~0.8 hr (Normal); add 20-30% if working height >10 ft【22†L171-L179】"
+      },
+      {
+        "task": "Install cover plate (single-gang) and final device adjustment",
+        "NECA_norm_hours": 0.05,
+        "NECA_ref": "Approx 3 minutes each (usually part of device install task)"
+      },
+      {
+        "task": "Terminate circuits in panel (per circuit, 3-4 wires on breaker/neutral/ground)",
+        "NECA_norm_hours": 0.2,
+        "NECA_ref": "Roughly 0.2 hr per branch circuit termination (in panel schedule)"
+      }
+    ]
+  }

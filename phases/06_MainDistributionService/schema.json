@@ -1,0 +1,59 @@
+{
+    "key_steps": [
+      "Plan and coordinate with utility and trades",
+      "Receive and inspect main switchgear/switchboard",
+      "Position and assemble gear sections",
+      "Install grounding and bonding connections",
+      "Run service raceways and pull conductors",
+      "Terminate service and feeder cables at gear",
+      "Perform inspections, testing, and energization"
+    ],
+    "materials": [
+      "Main switchboard/switchgear (4000A, 480Y/277V, e.g. Square D, Siemens)",
+      "Service conductors (multiple 500 MCM XHHW cables or bus duct)",
+      "Rigid metal conduits (4\"–5\" RMC/IMC for service entrance)",
+      "Grounding equipment (ground bus, bonding jumpers, ground rods)",
+      "Metering/CT cabinet (per ComEd requirements)",
+      "Hardware (lugs, terminations, anti-oxidant compound, anchors)"
+    ],
+    "code_references": {
+      "NEC": [
+        "230.70(A) – Service disconnect location (nearest point of entry)&#8203;:contentReference[oaicite:0]{index=0}",
+        "230.71 – Max 6 service disconnects grouped together",
+        "230.95 – Ground-fault protection >1000A on 480Y systems&#8203;:contentReference[oaicite:1]{index=1}",
+        "250.24 & 250.28 – Grounding electrode connection & main bonding jumper",
+        "408.3 – Switchboard arrangement & barriers for service sections",
+        "110.26 – Working clearance (3 ft min in front, etc.)"
+      ],
+      "Chicago": [
+        "14E-2-230 – Amendments: disconnect <5ft of entry (indoor)&#8203;:contentReference[oaicite:2]{index=2}",
+        "14E-2-230(A)(5) – High-rise: service in fire-rated electrical room near vault&#8203;:contentReference[oaicite:3]{index=3}",
+        "14E-2-230 – Require metallic raceway for service conductors above grade&#8203;:contentReference[oaicite:4]{index=4}",
+        "230.95 mod – GFPE required on busway feeders ≥1000A (any voltage)&#8203;:contentReference[oaicite:5]{index=5}",
+        "Ch.3 Amendment – All wiring in conduit/metal raceway (typical Chicago practice)&#8203;:contentReference[oaicite:6]{index=6}"
+      ]
+    },
+    "labor_units": [
+      "4 inch EMT conduit: ~16 labor-hours per 100 ft (NECA normal conditions)&#8203;:contentReference[oaicite:7]{index=7}",
+      "Terminating 500 MCM cable: ~0.7 hrs per lug (average conditions)&#8203;:contentReference[oaicite:8]{index=8}",
+      "Installing 4000A switchgear main section: ~30–40 hrs (crew total, est.)&#8203;:contentReference[oaicite:9]{index=9}",
+      "Bus duct installation: ~0.3–0.5 hrs per foot + per joint assembly (varies)"
+    ],
+    "common_pitfalls": [
+      "Improper torque on lugs (loose connections cause overheating)",
+      "Omitting bonding jumper between neutral and ground at service&#8203;:contentReference[oaicite:10]{index=10}",
+      "Insufficient working clearance or egress in electrical room (NEC 110.26)",
+      "Foreign piping/sprinklers over gear without protection (water damage risk)",
+      "Mislabeling or phasing errors on parallel feeds (phase rotation issues)",
+      "Leaving tools/debris inside switchboard (short-circuit hazard)&#8203;:contentReference[oaicite:11]{index=11}"
+    ],
+    "trade_coordination": [
+      "Utility: Schedule ComEd vault/meter installation and energization",
+      "Structural: Verify floor can support gear weight; install housekeeping pad",
+      "HVAC: Provide ventilation or cooling for electrical room (heat dissipation)",
+      "Plumbing: Keep water lines/sprinklers out of or shielded in electrical room",
+      "Fire Protection: Coordinate required room fire rating and any sprinkler exceptions",
+      "General Contractor: Path for bringing in large equipment (door removal, cranes)"
+    ]
+  }
+  

@@ -1,0 +1,163 @@
+{
+    "Phase": "Feeder & Large Conductor Pulling",
+    "CriticalStepsChecklist": [
+      "Verify all conduit runs (raceways) are installed, reamed, and clear of obstructions",
+      "Review plans and code requirements (NEC & CEC) for feeder sizing and configuration",
+      "Perform safety briefing and lockout/tagout before work (ensure circuits are de-energized)",
+      "Set up pulling equipment (capstan or tugger, sheaves, rollers) and communication system",
+      "Install pull rope or fish line (often via vacuum) through conduit path",
+      "Attach conductors to pulling rope with proper pulling grips and staggered lengths",
+      "Apply wire lubricant generously to conductors and conduit entry points",
+      "Coordinate pull: one team feeds cables in, another team operates puller, maintaining communication",
+      "Monitor tension and cable feed to prevent snags or insulation damage",
+      "Pull conductors to required length, leaving extra for terminations",
+      "Phase conductors and neutrals are identified (color-coded per code) and grouped correctly in each conduit",
+      "Terminate conductors with lugs or connectors (torque to spec) and install protective covers",
+      "Test insulation resistance (megger) and continuity after installation",
+      "Inspect installation against checklist before requesting inspection"
+    ],
+    "Materials": [
+      {
+        "name": "Copper Feeder Cable",
+        "specs": "500 kcmil THHN, 600V, 90°C, stranded copper",
+        "quantity_per_100ft": "Approximately 5 conductors (3 phase, 1 neutral, 1 ground) = 500 ft total per 100 ft run【19†L199-L207】"
+      },
+      {
+        "name": "Conduit (Raceway)",
+        "specs": "4-inch EMT (electroplated steel), 10 ft lengths",
+        "quantity_per_100ft": "10 lengths per 100 ft (plus couplings); ~390 lb per 100 ft【21†L171-L179】"
+      },
+      {
+        "name": "Wire Pulling Lubricant",
+        "specs": "3M™ or Ideal gel lubricant, UL-listed for cable pulling",
+        "quantity_per_100ft": "≈ 1 gallon per 100 ft (varies with number of bends and cables)【23†L195-L203】"
+      },
+      {
+        "name": "Pull Rope (Pulling Line)",
+        "specs": "3/4\" double-braided nylon/polyester rope, 2500+ lb rating",
+        "quantity_per_100ft": "1 rope run (one continuous length through conduit; re-usable)",
+        "note": "Often a pull line is left in place for future use (mule tape with sequential footage markings is common)"
+      },
+      {
+        "name": "Pulling Grips (Cable Socks)",
+        "specs": "Steel mesh basket grips for 500 MCM, with swivels",
+        "quantity_per_100ft": "Typically 1 per cable group (for all phases & neutral together)",
+        "note": "Swivel eye prevents cable twisting during pull"
+      },
+      {
+        "name": "Conduit Rollers & Guides",
+        "specs": "Corner rollers, entrance guides (e.g. tugger sheave)",
+        "quantity_per_100ft": "As needed at bends or box entrances (typically 1 at each end if pulling from box to box)",
+        "note": "Protects insulation from scraping at sharp edges"
+      },
+      {
+        "name": "Support Hardware",
+        "specs": "Strut channels, clamps, or cable supports for vertical runs",
+        "quantity_per_100ft": "Supports spaced per code (~every 10 ft for conduit, or per floor for vertical riser)",
+        "note": "Includes beam clamps, Unistrut (e.g. Eaton B-Line), hanger rods, etc."
+      },
+      {
+        "name": "Termination Lugs",
+        "specs": "Mechanical or compression lugs for 500 kcmil (e.g. Burndy, Ilsco), UL listed",
+        "quantity_per_100ft": "Typically 2 per conductor (one at each end of the feeder run)",
+        "note": "Often one set comes with gear; extras for spares. Use appropriate crimper (hydraulic for large lugs)."
+      }
+    ],
+    "CodeReferences": [
+      {
+        "NEC": "215.2(A)(1)(b)",
+        "Requirement": "Feeder ampacity >= max load (after adjustments/corrections)",
+        "Explanation": "Feeders must be sized so their allowable ampacity (after applying any ambient temperature or bundling adjustment) is not less than the load they carry【1†L159-L167】."
+      },
+      {
+        "NEC": "215.10 / 230.95",
+        "Requirement": "Ground-Fault Protection of Equipment (GFPE) on 1000A+ feeders/services",
+        "Explanation": "Feeders or service disconnects 1000A or larger on 480Y/277V systems require ground-fault protection to mitigate electrical fires【37†L84-L92】."
+      },
+      {
+        "NEC": "310.15 & Ch.9, Table 1",
+        "Requirement": "Conduit fill ≤40% for >2 conductors; derating for >3 current-carrying conductors",
+        "Explanation": "Limits on how many large conductors can occupy a conduit to prevent overheating. For example, if more than 3 conductors are in one conduit, each must be derated per NEC 310.15(B). Typically keep fill under 40%【8†L193-L201】【8†L205-L213】."
+      },
+      {
+        "NEC": "300.19",
+        "Requirement": "Support for Vertical Conductor Runs",
+        "Explanation": "Long vertical feeders must be supported so cable weight doesn’t damage terminations (e.g., cable supports or clamps in risers at specified intervals)."
+      },
+      {
+        "NEC": "110.14 & 110.3(B)",
+        "Requirement": "Proper terminations and torque per listing",
+        "Explanation": "Use connectors rated for the conductor size/material and tighten to manufacturer’s specified torque. Large lugs often require 75°C rated terminations and proper crimp tools."
+      },
+      {
+        "CEC": "14E-2-215 (Chicago Amendments)",
+        "Requirement": "Voltage drop limits & local design rules",
+        "Explanation": "Chicago code explicitly limits feeder voltage drop to 3%【39†L169-L177】 and total drop to 5%. It also requires feeder diagrams and plan submission for feeders ≥400A or >240V【39†L196-L204】."
+      },
+      {
+        "CEC": "14E-2-215.12(C)",
+        "Requirement": "Color coding of feeder conductors",
+        "Explanation": "Chicago mandates phase colors: for 480V (over 150V to ground) use brown, orange, yellow (BOY)【39†L230-L238】; neutral is gray or white, ground green. NEC only requires neutral (white/gray) and ground (green) identification, but local code adds phase colors."
+      },
+      {
+        "CEC": "Local Amendment",
+        "Requirement": "Max 9 conductors per conduit in Chicago",
+        "Explanation": "Chicago practice limits any conduit to 9 conductors max【26†L1-L4】 to reduce overheating, beyond NEC’s 40% fill and derating rules."
+      }
+    ],
+    "TradeCoordination": [
+      "Coordinate with **structural** teams for any needed openings, sleeves, or supports (e.g., ensure floor/wall penetrations for conduits are in place before pulling heavy feeders through).",
+      "Work with the **general contractor** on scheduling the pull – large cable reels and pulling equipment may require crane or hoist time and clear access. Schedule the pull during off-hours if it might obstruct other trades (due to long setups or safety concerns).",
+      "Coordinate with **mechanical/HVAC and plumbing** to avoid conflicts in congested shafts or ceiling spaces. Ensure your feeder conduits aren’t clashing with ductwork or pipes; adjust scheduling so that space is clear for pulling (no other trade’s materials stored in the way).",
+      "Communicate with the **electrical utility** or power company if the feeders connect to a utility transformer or switch – you may need their presence for final connections or shutdowns. The timing of energizing the 1200A service must align with utility schedules and safety protocols.",
+      "Ensure **safety coordination**: if using large equipment like tuggers, inform adjacent trades about the operation (no one should step over or near the rope under tension). Barricade the area if necessary during the pull.",
+      "Plan with **IBEW crew members** and possibly other subcontractors for assistance – e.g., a carpentry crew might build a temporary&#8203;:contentReference[oaicite:2]{index=2}&#8203;:contentReference[oaicite:3]{index=3}need to pull through a tricky elevation change. Also, coordinate any necessary inspection hold-points with the electrical inspector (some inspectors may want to witness critical connections or see that conduit is not yet buried until after inspection)."
+    ],
+    "CommonPitfalls": [
+      "**Underestimating Pull Force:** Large conductors have high friction. Not using enough lubricant or not upsizing conduit can lead to excessive tension, risking insulation damage or a stuck cable. **Solution:** Calculate pulling tension and use a suitable tugger; apply ample lube and consider using larger conduit than minimum code for easier pulling【8†L193-L200】.",
+      "**Improper Cond&#8203;:contentReference[oaicite:4]{index=4}:** In parallel runs, mixing up phase conductors (e.g., not having one of each phase in each conduit) causes dangerous overheating due to eddy currents. **Solution:** Meticulously identify and lay out phase A, B, C (and neutral) conductors for each conduit before the pull; use colored tape or tags on ends and double-check phase grouping per NEC 310.10(H).",
+      "**Insufficient Coordination:** Starting a pull while other trades are working in the same area can cause interruptions or accidents (e.g., a plumber might inadvertently move a ladder into the path of a cable being pulled). **Solution:** Use a spotter and communicate with all nearby crews; schedule a dedicated time for pulling when the area can be controlled.",
+      "**Skipping Trial Runs:** Not verifying that the conduit is clear (free of debris or kinks) can result in a jam halfway through. **Solution:** Always **rod or blow out conduits** with a vacuum or fishtape and pull a test mandrel if possible to ensure no blockages. This is especially important for older conduits or ones that had construction debris.",
+      "**Rushing Terminations:** After a tough pull, it’s tempting to quickly land wires. Mistakes like not torquing lugs or omitting anti-oxidant compound on aluminum (if used) can lead to failures. **Solution:** Follow a **termination checklist** – clean conductor, use proper lug, torque wrench to manufacturer spec (NEC 110.14(D) enforcement), and have a second person inspect each termination.",
+      "**Forgetting Arc Energy Reduction:** For 1200A services, NEC 240.87/240.67 requires special provisions for arc flash hazard reduction (like settings or a “maintenance mode”). Ignoring this could fail inspection. **Solution:** Work with engineers to ensure any 1200A overcurrent device has an **arc-energy reduction system or documentation** in place【28†L97-L105】, and install labels per 110.16(B) if required."
+    ],
+    "LaborUnits": [
+      {
+        "task": "Install 4-inch EMT conduit (overhead) per 100 ft",
+        "NECA_MLU_Ref": "Section 2, EMT, Normal conditions",
+        "hours": 16.0,
+        "comment": "Approximately 16 labor hours per 100 ft for 4\" EMT under normal conditions【16†L328-L336】 (increase to ~20 hrs if difficult)."
+      },
+      {
+        "task": "Pull 500 kcmil copper conductor in conduit, per 1000 ft (single conductor)",
+        "NECA_MLU_Ref": "Section 3, 600V THHN copper, Normal",
+        "hours": 44.0,
+        "comment": "NECA MLU indicates ~44 hours per 1000 ft for 500 MCM in normal conditions【14†L413-L421】 (add ~25% for difficult pulls). For a 100 ft run with 5 conductors, ~22 hours (crew total) is expected."
+      },
+      {
+        "task": "Terminate 500 kcmil cable on each end (per lug)",
+        "NECA_MLU_Ref": "Est. based on MLU and experience",
+        "hours": 0.5,
+        "comment": "Roughly 0.5 hours per termination for a large conductor lug under normal conditions (prep, crimp or torque, and taping). Multiply by number of lugs (e.g. 8 lugs for 4 conductors at one end = 4 hours)."
+      },
+      {
+        "task": "Pulling setup and take-down",
+        "NECA_MLU_Ref": "Job Planning (not explicit in MLU)",
+        "hours": 4.0,
+        "comment": "For a major pull, allocate ~4 hours for crew to set up tugger, rollers, and do cleanup. This is often a fixed overhead regardless of length."
+      },
+      {
+        "task": "Adjustment Factor – Height",
+        "NECA_MLU_Ref": "MLU Adjustment: Difficult",
+        "hours": "×1.25",
+        "comment": "If working at height (lifts or scaffolds), increase labor by ~25%. E.g., 4\" conduit at 20 ft high would use 'Difficult' rate (~20 hrs/100ft instead of 16)【16†L328-L336】."
+      },
+      {
+        "task": "Adjustment Factor – Accessibility",
+        "NECA_MLU_Ref": "MLU Adjustment: Very Difficult",
+        "hours": "×1.5",
+        "comment": "For very tight spaces or many bends (or pulling through multiple 90s), labor can roughly 1.5× the normal. NECA “Very Difficult” category adds ~50%【12†L415-L423】."
+      }
+    ]
+  }
+  

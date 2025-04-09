@@ -1,0 +1,135 @@
+{
+    "phase_name": "Testing, Commissioning & Inspections",
+    "checklist_items": [
+      "Complete continuity tests on all conductors (grounding and neutrals) to ensure no opens",
+      "Insulation resistance (megger) tests on feeders and critical circuits",
+      "Equipment functional tests (e.g. generators, UPS, transfer switches, lighting controls)",
+      "Panel torque verification for all terminations per specs",
+      "Circuit labeling and panel directories completed and verified",
+      "Grounding system resistance test or supplemental electrode installation",
+      "GFCI/AFCI device operational tests",
+      "Emergency lighting and exit sign 90-minute discharge test",
+      "Verify breaker settings and protective device coordination per design",
+      "Final walkthrough prior to inspection (check clearance, signage, as-builts, etc.)"
+    ],
+    "common_materials": [
+      {
+        "item": "Insulation Resistance Tester (Megohmmeter)",
+        "spec": "Digital, up to 1000V test range",
+        "quantity": 1
+      },
+      {
+        "item": "Multimeter (True RMS)",
+        "spec": "Cat III/IV 600V rated, e.g. Fluke 179",
+        "quantity": 1
+      },
+      {
+        "item": "Clamp Ammeter",
+        "spec": "600A AC jaw, for load measurements and current balance",
+        "quantity": 1
+      },
+      {
+        "item": "Ground Resistance Tester Kit",
+        "spec": "3-point fall-of-potential test capability, with ground stakes",
+        "quantity": 1
+      },
+      {
+        "item": "Label Maker & Labels",
+        "spec": "Industrial label printer (heat-shrink, adhesive labels) for panels/circuits",
+        "quantity": 1
+      },
+      {
+        "item": "Torque Wrench/Driver Set",
+        "spec": "Calibrated torque tool covering 10 in-lb up to 250 in-lb range",
+        "quantity": 1
+      },
+      {
+        "item": "Infrared Thermography Camera",
+        "spec": "Handheld, 120x120 IR resolution, for hot-spot scan under load",
+        "quantity": 1
+      },
+      {
+        "item": "Temporary Generator (Portable) or Load Bank",
+        "spec": "Rentable 50 kW resistive load bank or generator hookup for system testing",
+        "quantity": 1
+      },
+      {
+        "item": "Personal Protective Equipment (PPE) & Lockout/Tagout Kit",
+        "spec": "Arc-rated clothing (Category 2), gloves, mats, locks and tags for safety during tests",
+        "quantity": 1
+      }
+    ],
+    "code_references": [
+      {
+        "code": "NEC 110.7",
+        "description": "Wiring integrity – completed wiring must be free of short circuits and ground faults (verify by testing)【51†L207-L214】"
+      },
+      {
+        "code": "NEC 110.14(D)",
+        "description": "Terminals must be torqued to manufacturer specs using a calibrated tool【14†L246-L254】"
+      },
+      {
+        "code": "NEC 408.4(A)",
+        "description": "All circuits must be legibly identified on a directory at each panelboard【21†L1-L4】"
+      },
+      {
+        "code": "NEC 700.3",
+        "description": "Emergency power systems require acceptance testing and periodic maintenance (e.g. generator load test)【18†L23-L31】"
+      },
+      {
+        "code": "NEC 250.53(A)(2)",
+        "description": "If a single ground rod’s resistance > 25 Ω, install a supplemental electrode (avoid the need to verify by always using two rods)【45†L88-L96】"
+      },
+      {
+        "code": "Chicago Electrical Code - Metallic Conduit",
+        "description": "Chicago generally requires metallic raceways for all wiring; very limited use of flexible or NM cable is allowed【7†L38-L45】【7†L47-L53】"
+      },
+      {
+        "code": "Chicago Electrical Code - Emergency Systems",
+        "description": "Chicago amendments to Art. 700 impose strict requirements on emergency lighting and power (ensuring rapid, reliable backup power per local rules)"
+      }
+    ],
+    "trade_coordination_points": [
+      "Schedule **power shutdowns** or switching operations with all trades and building management (especially in retrofits) to safely perform tests",
+      "Coordinate **fire alarm testing** with the fire alarm contractor so that electrical tests (e.g. generator start) properly trigger and are observed by life-safety teams",
+      "Work with **HVAC/mechanical teams** to test interlocks (e.g. shut down AC units on fire alarm, verify motor rotations and VFD setups on fans/pumps)",
+      "Engage **low-voltage/BMS contractors** to verify that monitoring points (breaker statuses, power meters) are reading correctly in the building management system",
+      "Plan **load tests** (e.g. for generator or UPS) with facility operations – ensure HVAC is available to handle heat from load banks and that life safety systems are on standby"
+    ],
+    "common_pitfalls": [
+      "Skipping the documentation of test results – leads to **failing inspections** when proof of tests can’t be shown",
+      "Not torqueing lugs or terminations – can cause **loose connections** and hot spots (and is a code violation per NEC 110.14(D)【14†L246-L254】)",
+      "Inadequate labeling – missing or wrong labels can confuse circuits and **delay troubleshooting** during commissioning (violates NEC 408.4)【21†L1-L4】",
+      "Failing to isolate sensitive equipment before megger testing – can **damage electronics** like fire alarm panels or VFDs if they remain connected during high-voltage insulation tests",
+      "Poor scheduling – not coordinating with other trades or the power utility can result in **last-minute rushes** or inability to get outages, risking project delays",
+      "Neglecting to verify **phase rotation** for three-phase loads – leads to motors running backwards or pump/fan damage on startup",
+      "Overlooking Chicago-specific code items – e.g. using NM cable or plastic conduit where not allowed, resulting in **inspection failure** and rework in Chicago jurisdictions"
+    ],
+    "labor_units": [
+      {
+        "task": "Continuity test (per branch circuit)",
+        "avg_hours": 0.05
+      },
+      {
+        "task": "Insulation resistance test (per feeder cable run)",
+        "avg_hours": 0.5
+      },
+      {
+        "task": "Panelboard inspection & torque (per panel)",
+        "avg_hours": 1.5
+      },
+      {
+        "task": "Functional test of generator & ATS (system)",
+        "avg_hours": 4.0
+      },
+      {
+        "task": "Circuit labeling & directory update (per panel)",
+        "avg_hours": 1.0
+      },
+      {
+        "task": "GFCI/AFCI device test (each device)",
+        "avg_hours": 0.1
+      }
+    ]
+  }
+  

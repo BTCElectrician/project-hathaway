@@ -1,0 +1,46 @@
+{
+    "phase": "Close-Out (Punch List Completion)",
+    "checklist": [
+      "Complete all punch list fixes identified in walkthrough",
+      "Install missing devices, covers, and hardware",
+      "Label all panels, circuits, and equipment clearly",
+      "Perform testing (continuity, megger, functional tests)",
+      "Clean up site and remove temporary utilities",
+      "Finalize as-built drawings and O&M documentation",
+      "Schedule and assist with final inspections"
+    ],
+    "materials": [
+      { "item": "Panel directory labels", "spec": "Printed card or adhesive label", "quantity_per_panel": 1 },
+      { "item": "Circuit labels/markers", "spec": "#12-#10 wire markers (self-laminating)", "quantity_per_100ft": 10 },
+      { "item": "Blank cover plates", "spec": "Galvanized steel, standard size", "quantity_per_100": 5 },
+      { "item": "Conduit plugs/caps", "spec": "Plastic snap-in, trade sizes 1/2\" to 2\"", "quantity_per_100": 5 },
+      { "item": "Firestop sealant", "spec": "UL-classified intumescent caulk", "quantity_total": "As needed for penetrations" },
+      { "item": "Arc-flash warning labels", "spec": "NFPA 70E/NEC compliant label, 3x5 in.", "quantity_per_panel": 1 },
+      { "item": "Spare breakers/fuses", "spec": "Matching panelboard type, assorted amperages", "quantity_total": "10% of installed" }
+    ],
+    "code_references": [
+      { "NEC": "408.4(A) - Circuit directories must be legibly identified", "Chicago": "CEC requires same, with strict labeling enforcement" },
+      { "NEC": "408.7 - Unused openings in panels must be closed with approved blanks", "Chicago": "Same as NEC; no open holes allowed" },
+      { "NEC": "110.14(D) - Use torque tool for terminations per manufacturer specs", "Chicago": "Adopted via 2017 NEC reference" },
+      { "NEC": "700 & 701 - Emergency/Standby systems requirements for high-rise life safety", "Chicago": "Amended (e.g. SPD required on emergency panels)" },
+      { "NEC": "517 - Healthcare essential systems (life safety, critical, equipment branches)", "Chicago": "No major changes; follows NEC 517 with conduit wiring methods" },
+      { "NEC": "645 - IT/Data centers (EPO disconnect, dedicated HVAC, etc.)", "Chicago": "Follows NEC 645; conduit required for cables unless criteria met" }
+    ],
+    "trade_coordination": "Coordinate scheduling of final tests and ceiling/wall closures with HVAC, plumbing, fire alarm, life-safety systems, and GC. Ensure other trades complete their work to allow electrical close-out tasks (e.g. no painting after devices installed). Use joint inspections for integrated systems.",
+    "common_pitfalls": [
+      "Missing labels or directory info causing failed inspection",
+      "Unterminated wires or open box knockouts left unattended",
+      "Incorrect or loose connections discovered during final test",
+      "Firestopping left incomplete around cable penetrations",
+      "Delays in documentation (as-builts, O&M manuals) holding up turnover"
+    ],
+    "labor_units": {
+      "1/2\" EMT conduit (install, per 100 ft)": "2.5 hours",
+      "EMT set-screw connectors (each)": "0.05 hours",
+      "EMT one-hole strap (per 100 pcs)": "2.3 hours",
+      "Device trim out (standard receptacle, each)": "0.2 hours",
+      "Panelboard terminations (per circuit)": "0.1 hours",
+      "Megger test (per 1000 ft of cable)": "0.3 hours"
+    }
+  }
+  

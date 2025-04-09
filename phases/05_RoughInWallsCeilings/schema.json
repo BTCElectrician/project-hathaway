@@ -1,0 +1,74 @@
+{
+    "phase": "Rough-In (Walls & Ceilings)",
+    "tasks": [
+      "Layout & mark locations for all electrical boxes and conduits in walls/ceilings",
+      "Install outlet, switch, and junction boxes at specified heights and positions",
+      "Drill or punch holes in framing (studs/joists) for conduit/cable runs",
+      "Install conduits (EMT, rigid, or approved cable) between boxes per plan",
+      "Secure and support all raceways per code (straps, hangers, supports)",
+      "Pull branch circuit conductors (e.g. THHN wires) through conduits or run cables",
+      "Bond grounding conductors and metal boxes (ensure continuous ground path)",
+      "Coordinate rough openings and routes with HVAC ducts, plumbing, and framing",
+      "Apply fire-stopping to penetrations in fire-rated walls (if required)",
+      "Prepare for inspection (ensure code compliance and clean workmanship)"
+    ],
+    "materials": {
+      "raceways": ["EMT (Electrical Metallic Tubing)", "Rigid metal conduit (RMC/IMC) for services or outdoor runs", "MC cable (Metal-Clad) or AC cable (Armored) if allowed by local code"],
+      "wires": ["THHN/THWN insulated copper conductors (common for commercial branch circuits)", "Equipment grounding conductors (if separate from conduit)"],
+      "boxes": ["Steel outlet and switch boxes (4\" square or 4-11/16\" for multiple devices)", "Ceiling boxes (fan-rated or bar-hanger types for fixtures)", "Junction boxes for splices in ceilings"],
+      "fittings": ["EMT connectors and couplings (set-screw or compression type)", "Straps and supports (one-hole or two-hole straps, conduit hangers, Unistrut channels)", "Bushings and grommets (for conduit ends and metal stud passthroughs)", "Cable staples or clamps (for securing NM or MC cable if used)"],
+      "hardware": ["Mounting brackets for boxes (to studs or T-bar ceiling grids)", "Concrete anchors or beam clamps (for ceiling conduit supports)", "Firestop putty/caulk (for wall penetrations)"]
+    },
+    "code_references": {
+      "NEC": [
+        "NEC 300.x – General wiring methods (protect cables through studs, support conduits, separation from other systems)",
+        "NEC 314.16 – Outlet box fill limits (to avoid overfilled boxes)",
+        "NEC 110.12 – Workmanship must be neat and workmanlike (wires properly terminated, secured)【25†L11-L18】",
+        "NEC 250 – Grounding and bonding requirements (bond metal boxes and raceways)",
+        "NEC 210 & 408 – Branch circuit wiring and panel terminations (plan circuits and leave sufficient slack)",
+        "NEC 300.11 – Independent support: cables/conduits cannot hang from ceiling grids or other trade supports【30†L575-L584】"
+      ],
+      "Chicago_Code": [
+        "All wiring must be in metallic raceway (EMT or rigid); **NM cable is not permitted** in new construction【10†L274-L282】",
+        "Limit of 9 conductors per conduit (even if NEC fill allows more)【10†L268-L272】",
+        "Rigid metal conduit (RMC) required for service entrances and feeders entering buildings【3†L9-L17】",
+        "Some us&#8203;:contentReference[oaicite:1]{index=1}&#8203;:contentReference[oaicite:2]{index=2}ed only for fixture whips or in existing walls (retrofit), but never NM cable【10†L274-L282】",
+        "Chicago Electrical Code based on NEC with extensive amendments – always check local code sections (e.g. Title 14E in Chicago)"
+      ]
+    },
+    "common_pitfalls": [
+      "Mis-measuring conduit bends or box locations, leading to re&#8203;:contentReference[oaicite:3]{index=3}Overstuffing boxes with too many wires (violating fill capacity)",
+      "Failing to install grommets or na&#8203;:contentReference[oaicite:4]{index=4} protect cables from screws/nails (physical damage risk)",
+      "Loose connections at couplings or connectors causing poor grounding continuity",
+      "Running conduit in conflict with HVAC ducts or plumbing (forcing last-minute reroutes)",
+      "Inadequate support for cables or conduits (sagging runs that fail inspection)",
+      "Cutting wires too short in boxes (not meeting&#8203;:contentReference[oaicite:5]{index=5} conductor requirement)",
+      "Forgetting to bond met&#8203;:contentReference[oaicite:6]{index=6}using improper grounding methods",
+      "Neglecting to firestop wa&#8203;:contentReference[oaicite:7]{index=7}ons in rated walls (code violation during inspection)",
+      "Last-minute changes uncoordinated with drawings (missing a circuit or device location)"
+    ],
+    "coordination": {
+      "with_HVAC": "Plan conduit routes around ducts and air handlers; avoid blocking access panels and keep required clearances from hot ducts.",
+      "with_Plumbing": "Share wall space and studs appropriately – coordinate before drilling so electrical and pipes don’t collide or us&#8203;:contentReference[oaicite:8]{index=8}&#8203;:contentReference[oaicite:9]{index=9}eparation from water and gas lines.",
+      "with_Fire_Sprinklers": "Never support conduits from sprinkler pipes; coordinate&#8203;:contentReference[oaicite:10]{index=10}ce so conduits and sprinkler mains can coexist without interference.",
+      "with_Drywall/Carpentry": "Ensure box front edges are flush with expected drywall depth (using mud rings); communicate any required drywall :contentReference[oaicite:11]{index=11}ial support backing needed for devices.",
+      "with_Low_Voltage": "Plan separate pathways for data, fire alarm, or security cables. If sharing stud spaces or conduits, follow code separation (e.g. NEC 800) and avoid electromagnetic interference with sensitive cables."
+    },
+    "labor_data": {
+      "NECA_normal_rates": {
+        "1/2\" EMT conduit": "4.5 hours per 100 ft (baseline, normal conditions)【33†L25-L33】",
+        "3/4\" EMT conduit": "5.0 hours per 100 ft (normal conditions)【33†L25-L33】",
+        "Pulling THHN #12": "~0.06 hours per foot for a few wires in :contentReference[oaicite:12]{index=12}&#8203;:contentReference[oaicite:13]{index=13}uns or more wires)",
+        "Installing steel outlet box": "~0.2 hours each (includes mounting to stud)",
+        "Connecting one EMT conduit to box": "0.05 hours (around 3 minutes) per connector【17†L57-L65】"
+      },
+      "labor_adjustment_factors": {
+        "height_factor": "A&#8203;:contentReference[oaicite:14]{index=14}oot above 8 ft (work on ladders/scaffolds is slower)",
+        "congestion_factor": "Increase labor 10-25% in crowded ceilings or if multiple trades working in same area (reduced efficiency)",
+        "crew_experience": "Skilled crew might beat NECA baseline by 10% or more; new crews might take longer (use company’s historical productivity data)",
+        "overtime": "Expect productivity drop on overtime hours (e.g. 10% drop beyond 8 hours/day due to fatigue)",
+        "environment": "Tight schedule or poor site coordination can push a job from 'Normal' to 'Difficult' category (labor units increase accordingly)"
+      }
+    }
+  }
+  
