@@ -1,74 +1,284 @@
 {
-    "phase": "Rough-In (Walls & Ceilings)",
-    "tasks": [
-      "Layout & mark locations for all electrical boxes and conduits in walls/ceilings",
-      "Install outlet, switch, and junction boxes at specified heights and positions",
-      "Drill or punch holes in framing (studs/joists) for conduit/cable runs",
-      "Install conduits (EMT, rigid, or approved cable) between boxes per plan",
-      "Secure and support all raceways per code (straps, hangers, supports)",
-      "Pull branch circuit conductors (e.g. THHN wires) through conduits or run cables",
-      "Bond grounding conductors and metal boxes (ensure continuous ground path)",
-      "Coordinate rough openings and routes with HVAC ducts, plumbing, and framing",
-      "Apply fire-stopping to penetrations in fire-rated walls (if required)",
-      "Prepare for inspection (ensure code compliance and clean workmanship)"
-    ],
-    "materials": {
-      "raceways": ["EMT (Electrical Metallic Tubing)", "Rigid metal conduit (RMC/IMC) for services or outdoor runs", "MC cable (Metal-Clad) or AC cable (Armored) if allowed by local code"],
-      "wires": ["THHN/THWN insulated copper conductors (common for commercial branch circuits)", "Equipment grounding conductors (if separate from conduit)"],
-      "boxes": ["Steel outlet and switch boxes (4\" square or 4-11/16\" for multiple devices)", "Ceiling boxes (fan-rated or bar-hanger types for fixtures)", "Junction boxes for splices in ceilings"],
-      "fittings": ["EMT connectors and couplings (set-screw or compression type)", "Straps and supports (one-hole or two-hole straps, conduit hangers, Unistrut channels)", "Bushings and grommets (for conduit ends and metal stud passthroughs)", "Cable staples or clamps (for securing NM or MC cable if used)"],
-      "hardware": ["Mounting brackets for boxes (to studs or T-bar ceiling grids)", "Concrete anchors or beam clamps (for ceiling conduit supports)", "Firestop putty/caulk (for wall penetrations)"]
+  "phase_metadata": {
+    "phase_name": "Rough-In (Walls & Ceilings)",
+    "version": "1.0",
+    "description": "Phase covering installation of electrical infrastructure (conduits, boxes, etc.) in walls and ceilings of a commercial building during rough-in, prior to finishes.",
+    "last_updated": "2025-04-09"
+  },
+  "tasks": [
+    {
+      "name": "Layout and Coordination",
+      "description": "Review plans and mark locations for all outlets, switches, lights, and low-voltage devices on walls and ceilings. Coordinate with other trades (HVAC, plumbing, etc.) to prevent conflicts (e.g., adjust box placement to avoid ducts). Ensure door swings and furniture layouts are considered when marking device locations."
     },
-    "code_references": {
-      "NEC": [
-        "NEC 300.x – General wiring methods (protect cables through studs, support conduits, separation from other systems)",
-        "NEC 314.16 – Outlet box fill limits (to avoid overfilled boxes)",
-        "NEC 110.12 – Workmanship must be neat and workmanlike (wires properly terminated, secured)【25†L11-L18】",
-        "NEC 250 – Grounding and bonding requirements (bond metal boxes and raceways)",
-        "NEC 210 & 408 – Branch circuit wiring and panel terminations (plan circuits and leave sufficient slack)",
-        "NEC 300.11 – Independent support: cables/conduits cannot hang from ceiling grids or other trade supports【30†L575-L584】"
-      ],
-      "Chicago_Code": [
-        "All wiring must be in metallic raceway (EMT or rigid); **NM cable is not permitted** in new construction【10†L274-L282】",
-        "Limit of 9 conductors per conduit (even if NEC fill allows more)【10†L268-L272】",
-        "Rigid metal conduit (RMC) required for service entrances and feeders entering buildings【3†L9-L17】",
-        "Some us&#8203;:contentReference[oaicite:1]{index=1}&#8203;:contentReference[oaicite:2]{index=2}ed only for fixture whips or in existing walls (retrofit), but never NM cable【10†L274-L282】",
-        "Chicago Electrical Code based on NEC with extensive amendments – always check local code sections (e.g. Title 14E in Chicago)"
-      ]
+    {
+      "name": "Install Wall Electrical Boxes",
+      "description": "Mount metal electrical boxes at specified heights for receptacles, switches, and equipment in walls. Attach boxes to studs or block with appropriate brackets so front edges will be flush with finished drywall (or within allowed setback)&#8203;:contentReference[oaicite:0]{index=0}. Include specialized boxes for systems like access control readers by doors. Ensure multiple-gang boxes or rings are level and properly spaced."
     },
-    "common_pitfalls": [
-      "Mis-measuring conduit bends or box locations, leading to re&#8203;:contentReference[oaicite:3]{index=3}Overstuffing boxes with too many wires (violating fill capacity)",
-      "Failing to install grommets or na&#8203;:contentReference[oaicite:4]{index=4} protect cables from screws/nails (physical damage risk)",
-      "Loose connections at couplings or connectors causing poor grounding continuity",
-      "Running conduit in conflict with HVAC ducts or plumbing (forcing last-minute reroutes)",
-      "Inadequate support for cables or conduits (sagging runs that fail inspection)",
-      "Cutting wires too short in boxes (not meeting&#8203;:contentReference[oaicite:5]{index=5} conductor requirement)",
-      "Forgetting to bond met&#8203;:contentReference[oaicite:6]{index=6}using improper grounding methods",
-      "Neglecting to firestop wa&#8203;:contentReference[oaicite:7]{index=7}ons in rated walls (code violation during inspection)",
-      "Last-minute changes uncoordinated with drawings (missing a circuit or device location)"
-    ],
-    "coordination": {
-      "with_HVAC": "Plan conduit routes around ducts and air handlers; avoid blocking access panels and keep required clearances from hot ducts.",
-      "with_Plumbing": "Share wall space and studs appropriately – coordinate before drilling so electrical and pipes don’t collide or us&#8203;:contentReference[oaicite:8]{index=8}&#8203;:contentReference[oaicite:9]{index=9}eparation from water and gas lines.",
-      "with_Fire_Sprinklers": "Never support conduits from sprinkler pipes; coordinate&#8203;:contentReference[oaicite:10]{index=10}ce so conduits and sprinkler mains can coexist without interference.",
-      "with_Drywall/Carpentry": "Ensure box front edges are flush with expected drywall depth (using mud rings); communicate any required drywall :contentReference[oaicite:11]{index=11}ial support backing needed for devices.",
-      "with_Low_Voltage": "Plan separate pathways for data, fire alarm, or security cables. If sharing stud spaces or conduits, follow code separation (e.g. NEC 800) and avoid electromagnetic interference with sensitive cables."
+    {
+      "name": "Install Ceiling and Junction Boxes",
+      "description": "Install junction boxes above ceilings for lighting fixtures, speakers, and splices. Secure each box independently to structure (not just ceiling grid) using support wires or hangers&#8203;:contentReference[oaicite:1]{index=1}. Keep boxes accessible (not buried behind drywall) and under 100 cubic inches if supporting from a ceiling wire per code. Use fan-rated boxes or additional support for heavy fixtures as needed."
     },
-    "labor_data": {
-      "NECA_normal_rates": {
-        "1/2\" EMT conduit": "4.5 hours per 100 ft (baseline, normal conditions)【33†L25-L33】",
-        "3/4\" EMT conduit": "5.0 hours per 100 ft (normal conditions)【33†L25-L33】",
-        "Pulling THHN #12": "~0.06 hours per foot for a few wires in :contentReference[oaicite:12]{index=12}&#8203;:contentReference[oaicite:13]{index=13}uns or more wires)",
-        "Installing steel outlet box": "~0.2 hours each (includes mounting to stud)",
-        "Connecting one EMT conduit to box": "0.05 hours (around 3 minutes) per connector【17†L57-L65】"
-      },
-      "labor_adjustment_factors": {
-        "height_factor": "A&#8203;:contentReference[oaicite:14]{index=14}oot above 8 ft (work on ladders/scaffolds is slower)",
-        "congestion_factor": "Increase labor 10-25% in crowded ceilings or if multiple trades working in same area (reduced efficiency)",
-        "crew_experience": "Skilled crew might beat NECA baseline by 10% or more; new crews might take longer (use company’s historical productivity data)",
-        "overtime": "Expect productivity drop on overtime hours (e.g. 10% drop beyond 8 hours/day due to fatigue)",
-        "environment": "Tight schedule or poor site coordination can push a job from 'Normal' to 'Difficult' category (labor units increase accordingly)"
-      }
+    {
+      "name": "Install Conduit Runs (Walls)",
+      "description": "Run EMT conduit in walls between boxes and to electrical closets. Measure, cut, and bend conduit to navigate framing; ream all cut ends to remove sharp edges. Secure conduits with straps within 3 ft of each box and at least every 10 ft in between&#8203;:contentReference[oaicite:2]{index=2}. Join segments with couplings and attach to boxes with connectors (tighten locknuts for good bond). Follow conduit fill limits and avoid over-bending (max 360° between pull points)&#8203;:contentReference[oaicite:3]{index=3}."
+    },
+    {
+      "name": "Install Conduit Runs (Ceilings)",
+      "description": "Run conduits above ceilings for branch circuits, feeders, and low-voltage pathways. Use trapeze hangers, threaded rod, or beam clamps to support horizontal runs. Keep EMT runs organized and at a uniform height where possible. Maintain clearance from ceiling tiles and other equipment. Adhere to bending rules (e.g., provide pull boxes if conduit route requires over four 90° bends)&#8203;:contentReference[oaicite:4]{index=4}. Terminate conduits into junction boxes or stub into accessible spaces for future pulls."
+    },
+    {
+      "name": "Low-Voltage Rough-In",
+      "description": "Install pathways and backboxes for data, phone, security, and other low-voltage systems. Mount low-voltage mud rings or boxes alongside electrical outlets (for network jacks, etc.) as per drawings. Run separate conduits (typically 3/4\" EMT or ENT) for communications cables, from outlet locations to above the ceiling or telecom closet. Keep these at least 2 inches away from parallel power conduits to reduce interference&#8203;:contentReference[oaicite:5]{index=5} and do not mix power and low-voltage in the same conduit or box. For access control doors, stub a 3/4\" EMT into the door frame area for card reader and electrified lock wiring&#8203;:contentReference[oaicite:6]{index=6}. Provide pull strings in conduits for the low-voltage contractor."
+    },
+    {
+      "name": "Quality Check and Labeling",
+      "description": "After installation, double-check that all conduit and box installations meet code and project specs. Verify tight connections, proper supports, and correct box positioning. Attach temporary labels or markings to identify circuit numbers on homerun conduits and note low-voltage conduits for easier pull identification later. Document any deviations in as-built drawings."
     }
-  }
-  
+  ],
+  "materials": {
+    "raceways": [
+      {
+        "type": "Electrical Metallic Tubing (EMT)",
+        "description": "Primary metal conduit used for branch circuit rough-in. Common trade sizes 1/2\" and 3/4\" EMT for most circuits, with larger sizes for feeders. EMT is steel conduit that provides a grounded metal raceway for wires&#8203;:contentReference[oaicite:7]{index=7}. Chicago code requires metallic conduit for nearly all wiring (no NM cable)."
+      },
+      {
+        "type": "Rigid Metal Conduit (RMC)",
+        "description": "Thick-wall threaded steel conduit, used where higher strength or outdoor exposure is needed. In interior rough-in, RMC may be used for service conduits or where required by structural conditions. Provides excellent protection and grounding. More labor-intensive to install (threading required)."
+      },
+      {
+        "type": "Flexible Metal Conduit (FMC)",
+        "description": "Also known as \"Greenfield,\" flexible spiral conduit used for short connections where motion or vibration is a factor (e.g., final 6 ft to light fixtures or to motors). Chicago amendments allow FMC up to 25 ft in remodel work behind existing finishes&#8203;:contentReference[oaicite:8]{index=8}. Not typically used for long runs in new construction."
+      },
+      {
+        "type": "Metal-Clad Cable (MC)",
+        "description": "Assembly of insulated conductors in a flexible aluminum or steel jacket. MC cable can sometimes be used in Chicago for specific cases (e.g., fixture whips or certain retrofit scenarios) but generally conduit is preferred. If used, must have proper connectors and anti-short bushings at terminations."
+      }
+    ],
+    "boxes": [
+      {
+        "type": "Standard 4\" Square Boxes",
+        "description": "4x4 inch steel boxes (1-1/2\" or 2-1/8\" deep) used for most outlets, switches (with a mud ring), and junctions. Volume ranges ~21 to 30 cubic inches depending on depth, accommodating several conductors&#8203;:contentReference[oaicite:9]{index=9}. Can accept device rings for 1-gang or 2-gang devices. Must be installed flush to finish in walls or with appropriate extension."
+      },
+      {
+        "type": "Device Boxes (Gangable)",
+        "description": "Metal device boxes (e.g., 2\" x 3\" gangable boxes) for single-gang devices where 4\" square + ring isn’t used. These can be joined for multi-gang configurations. Include internal cable clamps if applicable. Less common in commercial Chicago work (4\" square with mud ring is more typical for robustness)."
+      },
+      {
+        "type": "Ceiling Junction Boxes",
+        "description": "Octagon or 4\" square boxes for ceiling-mounted devices (light fixtures, speakers, cameras). Often mounted to building structure or suspended with support wires. Ensure rated boxes are used for ceiling fans or heavy fixtures. If above a drop ceiling, use a plaster frame or tile bridge if the fixture attaches to the box."
+      },
+      {
+        "type": "Low-Voltage Rings/Brackets",
+        "description": "Plastic or metal open-backed brackets that attach to studs or existing boxes, creating a mounting point for low-voltage outlets (data, phone, coax). They have no back enclosure, which is acceptable for communications cabling. For fire-rated walls, use a metallic low-voltage box or putty pad to maintain rating."
+      },
+      {
+        "type": "Back Boxes for Specialty Systems",
+        "description": "Special enclosures like card reader boxes (often 1-gang near doors) or camera back boxes. These are placed during rough-in to house security devices or future connections. E.g., a card reader might use a 1-gang metal box at 48\" AFF by the door, with 3/4\" EMT to above ceiling&#8203;:contentReference[oaicite:10]{index=10}."
+      }
+    ],
+    "wire": [
+      {
+        "type": "THHN/THWN Insulated Copper Conductors",
+        "description": "Standard building wire pulled in conduit. #12 AWG THHN for 20A circuits, #10 for 30A, etc., with 90°C insulation rating. THHN also has THWN rating for wet locations if needed. All branch circuit wiring in this project is copper THHN. Include green or green/yellow grounding conductor in each conduit (even though EMT can serve as ground) for redundancy and per spec."
+      },
+      {
+        "type": "Equipment Grounding Conductors",
+        "description": "Green insulated grounding wires sized per NEC 250.122. Used to bond each circuit’s conduit and boxes. In Chicago metallic conduit systems, a separate ground wire is often still pulled to ensure positive grounding continuity at junctions. Typically #12 AWG for 20A circuits, or larger for feeders. Attached to each metal box with a green screw."
+      },
+      {
+        "type": "Low-Voltage Cables",
+        "description": "Data (Ethernet) cables Cat6 or Cat6A for networking, usually plenum-rated (CMP) for use in air-handling spaces&#8203;:contentReference[oaicite:11]{index=11}. Coaxial cables for TV/CCTV, multi-conductor cables for security (e.g., 22 AWG 6-conductor for card readers, 18/2 for door strikes). These will be installed by low-voltage technicians, but electricians install conduits and innerduct to accommodate them."
+      }
+    ],
+    "fittings": [
+      {
+        "type": "EMT Connectors & Couplings",
+        "description": "Connectors secure EMT to boxes; couplings join conduit sections. Use steel compression connectors/couplings (raintight if needed) for a robust, code-compliant connection (set-screw types are common indoors too). Each 10 ft conduit length typically needs a coupling to the next. Labor unit ~0.05 hours each for 1/2\" EMT couplings&#8203;:contentReference[oaicite:12]{index=12}. Ensure locknuts are tight for ground continuity."
+      },
+      {
+        "type": "Conduit Supports & Hangers",
+        "description": "One-hole and two-hole straps for securing conduits to walls and studs. For ceilings: beam clamps, strap hangers, or unistrut channel with conduit clamps to support multiple conduits. Follow spacing: straps within 3 ft of box and every 10 ft for EMT&#8203;:contentReference[oaicite:13]{index=13}. Support wires (independent of ceiling grid) for hanging conduits or boxes above drop ceilings."
+      },
+      {
+        "type": "Bushings and Insulators",
+        "description": "Plastic bushings for threaded rigid conduit ends, insulating throat connectors for EMT terminating at panels, and grommets for protecting cables. Any conduit with wires #4 AWG or larger requires an insulating bushing by code to protect insulation. Bushings or ko seals also used to cap stubbed conduit ends during construction to keep debris out."
+      },
+      {
+        "type": "Mounting Hardware",
+        "description": "Screws, anchors, and miscellaneous hardware to fasten boxes and supports. Examples: self-drilling Tek screws for attaching straps to metal studs, expansion anchors for concrete, toggle bolts for hollow attachments, and powder-actuated fasteners for steel or concrete (used with caution and proper training). Ensure all hardware is appropriate for the weight and environment."
+      }
+    ],
+    "low_voltage_provisions": [
+      {
+        "type": "Innerduct (Smurf Tube)",
+        "description": "Flexible ENT (usually blue or orange) conduit used for routing low-voltage cables like fiber or data, especially where a flexible pathway is needed. ENT is allowed in Chicago only for low-voltage or special cases due to conduit requirements. Provides protection and easy identification for communication cable runs."
+      },
+      {
+        "type": "Cable Tray & J-Hooks",
+        "description": "Overhead support systems for large bundles of low-voltage cable (structured cabling). In a server room or corridor, a metal cable tray might be installed to carry many cables. Elsewhere, individual J-hooks spaced every 4-5 feet can support cables. Electricians install these during rough-in so low-voltage installers can lay in their cables later."
+      },
+      {
+        "type": "Access Control Raceway",
+        "description": "Conduit and boxes for door security devices. Includes a 3/4\" EMT stubbed to each door frame for card reader and door strike wiring&#8203;:contentReference[oaicite:14]{index=14}, typically leading back to an above-ceiling junction box. Also conduit to ceiling for door position sensors and request-to-exit devices. These raceways ensure security cabling is concealed and protected."
+      },
+      {
+        "type": "Fire Alarm Rough-in Materials",
+        "description": "If applicable, red-painted conduit or identifiable markings for fire alarm circuits per code. Backboxes for horn/strobes, pull stations, and smoke detectors, usually 4\" square or 4\" octagon boxes with red covers. Fire alarm cables (FPLR/FPLP) would be run in these conduits by the fire alarm contractor."
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Conduit Benders",
+      "description": "Hand benders for EMT (1/2\" and 3/4\" sizes) and mechanical/hydraulic benders for larger conduit. Used to create accurate bends (90°, offsets, saddles) in conduit while maintaining proper radius."
+    },
+    {
+      "name": "Drill (Hammer Drill) & Bits",
+      "description": "Electric drills with spade bits or hole saws for wood framing, and hammer drill bits for concrete. Used to drill holes through studs or decks for running conduit or to mount anchors for supports."
+    },
+    {
+      "name": "Fish Tape and Rods",
+      "description": "Thin, flexible steel or fiberglass tapes used to fish wires through conduits. Glow rods or fish sticks help navigate above ceilings or down walls. Essential for pulling in conductors after conduit is installed."
+    },
+    {
+      "name": "Voltage Tester/Multimeter",
+      "description": "Used to ensure circuits are de-energized before working (voltage tester) and to check continuity or grounding after installation (ohm meter). Important for safety verifications and quality control checks."
+    },
+    {
+      "name": "Label Maker",
+      "description": "Portable label printer or pre-printed wire markers for identifying cables, conduits, and boxes. Helps in labeling circuit numbers on home-run conduits and distinguishing low-voltage pathways, aiding future tracing."
+    },
+    {
+      "name": "Saw and Cutting Tools",
+      "description": "Hacksaw or portable band saw for cutting conduit to length. PVC cutters for any plastic conduit/innerduct. Also, knockout punches for making conduit holes in panels or boxes if required."
+    },
+    {
+      "name": "General Hand Tools",
+      "description": "Pliers (lineman, needle-nose), screwdrivers, tape measure, level, utility knife, chisels (for minor drywall notching), and torpedo level. Standard tool set carried by electricians for various installation tasks."
+    },
+    {
+      "name": "Ladders and Scaffolds",
+      "description": "A-frame ladders, extension ladders, or scaffolding for reaching high ceiling areas. In large open areas, a scissor lift might be used. All climbing equipment must be in good condition and properly rated."
+    }
+  ],
+  "safety": {
+    "PPE": [
+      "Hard hat (head protection at all times on site)",
+      "Safety glasses or goggles (eye protection while cutting, drilling, or pulling wire)",
+      "High-visibility vest (so equipment operators can see you)",
+      "Cut-resistant gloves (when handling metal or sharp materials)",
+      "Steel-toe boots (foot protection from heavy falling objects)",
+      "Hearing protection (ear plugs or muffs when using hammer drills or near loud equipment)",
+      "Dust mask/respirator (for drilling concrete or working in dusty ceiling spaces)",
+      "Electrical insulating gloves (for any work on or near live circuits, used with lockout procedures)"
+    ],
+    "procedures": [
+      "Lockout/Tagout: Verify all circuits are de-energized before working on existing wiring. Use lockout devices and tags at panel breakers feeding the area, and test with a voltage tester&#8203;:contentReference[oaicite:15]{index=15}.",
+      "Fall Safety: Use proper ladders (fiberglass for electrical work) and maintain 3-point contact when climbing. For higher elevations, use approved lifts with guardrails or personal fall arrest systems as required.",
+      "Tool Safety: Inspect power tools and cords for damage (no frayed wires). Use GFCI protection on temporary power sources. Do not use cheater plugs or remove ground prongs. Secure and tether tools when working overhead to prevent drops.",
+      "Material Handling: Use team lifting or equipment (carts, hoists) for heavy conduit bundles or boxes. Store materials securely (e.g., no conduit leaning that can slide). Keep pathways clear to avoid trip hazards from offcuts or tools.",
+      "Fire Safety: No open flames near work if flammable materials (solvent, insulation) are present. Have fire extinguishers available. Follow hot work permit procedures if welding or cutting pipe with torch.",
+      "Electrical Hazards: Treat all metal parts of the installation as energized until verified otherwise. Be cautious of adjacent live panels or circuits outside the project scope. Use insulated tools for any circuit terminations. Be aware of arc flash boundaries around live equipment (though typically not an issue during rough-in when power is off)."
+    ]
+  },
+  "quality_control": [
+    {
+      "item": "Conduit Support & Integrity",
+      "criteria": "Conduits are secured per code: within 3' of boxes and every 10' of run for EMT&#8203;:contentReference[oaicite:16]{index=16}. Check that all straps, hangers, and supports are tight. Ensure no excessive flex or movement. Conduit joints (couplings) are properly made up and reamed; no rough edges that could damage wires."
+    },
+    {
+      "item": "Box Positioning & Flushness",
+      "criteria": "Every wall box is correctly positioned at the intended height and flush with the finished wall surface. Verify that boxes are set so that any plaster ring will be flush with drywall. No gaps greater than 1/8\" in non-combustible or 1/4\" in combustible materials per NEC 314.20. Misaligned or sunken boxes are corrected before wall finish."
+    },
+    {
+      "item": "Grounding Continuity",
+      "criteria": "All metal components are bonded. Confirm that each metal box has a grounding pigtail attached (unless using approved grounding clamps/conduit as ground) and that locknuts and bonding bushings (if required) are in place and tight. Use an ohmmeter to spot-check continuity between boxes and the panel ground bar to ensure a continuous grounding path&#8203;:contentReference[oaicite:17]{index=17}."
+    },
+    {
+      "item": "Box Fill Compliance",
+      "criteria": "Count conductors in each box and ensure the box has adequate volume per NEC 314.16. For example, a 4\" square 1-1/2\" deep box (~21 cu.in.) can handle up to 9 #12 conductors (2.25 cu.in each) including adjustments&#8203;:contentReference[oaicite:18]{index=18}. Verify large splice points or multi-gang boxes are not overfilled; use extension boxes if needed. Document fill calculations for inspector if requested."
+    },
+    {
+      "item": "Low-Voltage Separation",
+      "criteria": "Power and communication pathways are properly separated. Check that no communication cable is run in the same conduit as power circuits (unless specifically allowed with divider or rated cable). Ensure minimum 2\" separation maintained between parallel runs of EMT carrying power and those carrying data or other low-voltage cables&#8203;:contentReference[oaicite:19]{index=19}. Where power and low-voltage devices share an enclosure (e.g., outlet with integral USB or a combined fire/security device), ensure listed divider or separation per code."
+    },
+    {
+      "item": "Workmanship & Code Adherence",
+      "criteria": "Overall quality is neat and code-compliant: Conduit bends are smooth without kinks; no more than 360° of bends between pull points&#8203;:contentReference[oaicite:20]{index=20}. Cables and conduits are not subject to physical damage or placed where they could be pinched by finishes. All penetration through fire-rated walls are sealed or have a plan to be firestopped (NEC 300.21) before project completion. Ensure labels or markings (if required) on junction boxes (e.g., \"J-Box 12A\" or circuit numbers) are in place for identification."
+    }
+  ],
+  "timeline_and_dependencies": [
+    {
+      "subphase": "Layout & Prep",
+      "estimated_duration": "2 days",
+      "dependencies": ["Building layout completed", "Wall framing and door frames in place", "Initial coordination meeting done"],
+      "description": "Electrician team performs a layout, marking all device locations on floors/walls using chalk or laser, and adjusts for conflicts in real time. This happens after studs and framing are up but before other trades fill walls. Requires construction drawings and reflected ceiling plan on hand."
+    },
+    {
+      "subphase": "Wall Rough-In",
+      "estimated_duration": "2-3 weeks",
+      "dependencies": ["Framing complete", "HVAC/plumbing rough-in started (so major conflicts known)", "Before insulation and drywall installation"],
+      "description": "Installation of all in-wall conduits, cables, and boxes across the building: offices, conference rooms, bathrooms, kitchen, etc. Electricians mount wall boxes, drill studs, and run EMT for branch circuits and stubs for data. Low-voltage conduits for card readers, cameras, etc., are also placed. This subphase must finish prior to wall closure and often overlaps with mechanical rough-ins in the same walls."
+    },
+    {
+      "subphase": "Ceiling Rough-In",
+      "estimated_duration": "1-2 weeks",
+      "dependencies": ["Roof/ceiling structure in place", "Other trades' overhead rough-in mostly complete (ducts, pipes)", "Before ceiling tiles or drywall ceilings are installed"],
+      "description": "Run conduits in overhead spaces for lighting, exit signs, smoke detectors, and homeruns from each area to the electrical room. Coordinate the sequence with the sprinkler and HVAC installers to avoid stepping on each other's work. Rough-in for ceiling devices (speakers, Wi-Fi APs, cameras) is done now. Any required floor penetrations (sleeves) for feeders or data trunks are installed."
+    },
+    {
+      "subphase": "Inspection & Corrections",
+      "estimated_duration": "3-5 days (including any fixes)",
+      "dependencies": ["All rough-in work completed", "Self-inspection passed"],
+      "description": "Schedule the city inspection for the rough-in. The electrical inspector will check conduit fill, support, box fill, grounding, and overall workmanship against NEC and Chicago codes. The timeline includes a buffer to fix any issues found and get re-inspected if needed. Approval at this stage is required before insulating or covering walls/ceilings."
+    },
+    {
+      "subphase": "Trade Wrap-Up",
+      "estimated_duration": "1 week",
+      "dependencies": ["Rough inspection approved"],
+      "description": "Finalize any coordination hand-offs: ensure low-voltage contractors have pull strings and conduits they need, verify any changes are marked on as-builts, and install any firestop in penetrations. At this point, walls can be closed up. Electricians might pre-run certain pull wires or leave coil in boxes if the schedule allows. Then the project moves to the next phase (trim-out or fixture installation) after wall finishing."
+    }
+  ],
+  "code_references": {
+    "NEC_2023": {
+      "Article_300": "General Wiring Methods: Rules for installing wiring safely, covering aspects like securing cables, protection from damage, supporting conduits, and firestopping. For example, 300.4 requires protection of cables/conduits through metal studs to prevent nail/screw damage, and 300.11 prohibits supporting conduit from ceiling grids.&#8203;:contentReference[oaicite:21]{index=21}",
+      "Article_314": "Outlet, Device, Pull & Junction Boxes: Requirements for box installation and use. NEC 314.16 outlines box fill calculations (volume per conductor)&#8203;:contentReference[oaicite:22]{index=22}, 314.20 requires boxes to be flush or within 1/4\" of combustible surfaces, 314.23 provides rules for supporting boxes (e.g., independently supported in a drop ceiling)&#8203;:contentReference[oaicite:23]{index=23}, and 314.29 mandates all boxes remain accessible (no covering with drywall).",
+      "Article_250": "Grounding and Bonding: Details the requirements for bonding all metal parts of the electrical system. NEC 250.86 and 250.148 require metal conduit and boxes to be bonded (via connectors or jumpers). 250.118 recognizes EMT as an equipment grounding conductor, but installation must ensure continuous bonding (tight connectors, grounding bushings if needed). 250.122 specifies ground wire sizing. This ensures any fault is safely carried to ground&#8203;:contentReference[oaicite:24]{index=24}.",
+      "Article_800": "Communication Circuits: NEC section for low-voltage communications wiring. 800.133(A)(2) requires at least 2 inches of separation between communications cables and power conductors to prevent interference&#8203;:contentReference[oaicite:25]{index=25}. It also covers using listed communication raceways (like innerduct) and not placing communications cables in same box/raceway with power unless a partition or exception applies. Installations must also comply with Chapter 3 wiring methods if using conduit (per 800.110)."
+    },
+    "Chicago_Amendments": {
+      "No_NM_Cable": "Nonmetallic-sheathed cable (NM, NMC) is not permitted in Chicago except for very limited cases like temporary wiring&#8203;:contentReference[oaicite:26]{index=26}. All permanent building wiring must use metal raceways (conduit) or metallic sheathed cable.",
+      "Mandatory_Metal_Conduit": "Chicago requires that nearly all circuits be run in metal conduit (usually EMT for interior work). The use of PVC or other non-metallic raceways is heavily restricted. MC or AC cable is generally only allowed in specific rehab or fixture whip situations, not for general circuit runs (the preference is always pipe).",
+      "Flexible_Conduit_Exceptions": "Flexible Metal Conduit (FMC) and similar (including MC cable) can be used up to 25 ft in length in existing walls/ceilings where adding EMT is impractical&#8203;:contentReference[oaicite:27]{index=27}. This amendment helps in retrofits; however, in new construction walls, EMT is used instead of flexible cable.",
+      "Local_Grounding_Policy": "Conduit is recognized as a grounding path, but Chicago practice often adds a separate grounding conductor in conduits for redundancy. All metal boxes must be bonded with a screw and pigtail (NEC 250 and local practice). Additionally, Chicago historically required bonding of metallic raceway joints with bonding jumpers if threads/setscrews alone might not ensure continuity.",
+      "Other_Local_Codes": "Chicago Electrical Code may include amendments like requiring tamper-resistant covers in some areas, specific emergency circuit arrangements, or higher minimum counts of circuits in kitchens, etc. While these are beyond NEC basics, apprentices should be aware that local code printouts provided by the foreman detail these differences. Always cross-check NEC requirements with Chicago amendments for compliance."
+    }
+  },
+  "labor_units": {
+    "emt_runs": "Installing EMT conduit: ~2.25 labor hours per 100 ft for 1/2\" EMT under normal conditions&#8203;:contentReference[oaicite:28]{index=28}. Larger conduit or more complex runs (many bends or congested areas) will increase this (e.g., 1\" EMT ~5 hours/100 ft&#8203;:contentReference[oaicite:29]{index=29}). These units include cutting, bending, and mounting the conduit with typical supports.",
+    "box_installation": "Installing outlet/junction boxes: ~18 hours per 100 standard 4\" square boxes (0.18 hr each)&#8203;:contentReference[oaicite:30]{index=30}. This accounts for attaching the box to structure and adding any necessary supports or screws. Larger boxes or boxes with prefab mounting may vary slightly.",
+    "wire_pulls": "Pulling conductors through conduit: ~4.25 hours per 1000 ft of #12 THHN copper (about 0.0043 hr/ft) for a straight run&#8203;:contentReference[oaicite:31]{index=31}. Actual time depends on number of wires and conduit bends; for example, pulling three #12 wires through 100 ft of EMT might take ~0.5-1 hour including set-up. Low-friction jacketed wire and proper lube can reduce time.",
+    "low_voltage_prep": "Low-voltage rough-in: Installing a mud ring or low-voltage box ~0.05 hr each (about 20 per hour)&#8203;:contentReference[oaicite:32]{index=32}, since they often just screw to a stud. Running a 3/4\" EMT conduit stub for data or security is similar to EMT runs for power (~2-3 hr/100 ft if simple). Pulling a Cat6 cable is quicker than power wiring; roughly 2 hours per 1000 ft in open runs (0.002 hr/ft) in ideal conditions, but can vary with routing and bundled pulls.",
+    "grounding_connections": "Making grounding connections: ~0.1 hr each for bonding jumpers (6 minutes for 5 pigtails). This includes stripping the wire, attaching to green screw in box, and crimping or twisting the other end to the circuit ground wires. Larger lugs or multiple ground wires in a box will take longer. Overall, a typical rough-in might budget a few labor hours for grounding all boxes in the project."
+  },
+  "common_pitfalls": [
+    "Overfilled Boxes: Placing too many conductors or devices in a box can violate box fill rules and cause overheating&#8203;:contentReference[oaicite:33]{index=33}. A common mistake is forgetting that each switch or receptacle counts as two conductors for fill. Always use a box deep enough for the number of wires, or add an extension box.",
+    "Inadequate Conduit Support: Omitting supports or spacing them too far apart leads to sagging conduits that will be flagged by inspectors. For instance, EMT not fastened within 3 ft of a junction box is a code violation&#8203;:contentReference[oaicite:34]{index=34}. Also, using flimsy support (like tie wire to ceiling grid) instead of proper straps or hangers is improper and unsafe.",
+    "Poor Grounding/Bonding: Relying on conduit threads or set-screw connectors alone for grounding can be problematic if not tightened well. Forgetting to install a grounding pigtail in a metal box (where required) is another mistake. These issues can result in failed continuity tests. It's safer to provide a dedicated ground wire and tighten all connections to spec&#8203;:contentReference[oaicite:35]{index=35}.",
+    "Coordination Misses: Not communicating with other trades can lead to situations like an electrical box ending up directly behind a duct or a conduit run where a sprinkler main needs to go. This oversight means redoing work. Always check updated mechanical drawings and attend coordination meetings to prevent such clashes.",
+    "Wrong Box Depth: Setting boxes too far back from the finished surface, or using shallow boxes where a device with a lot of wiring will go (like GFCI receptacles with multiple connections), can cause device installation issues later. Ensure box depth and extension rings are chosen correctly based on wall finish thickness and device fill.",
+    "Skipping Fire Caulk: After running conduits, each penetration through a rated wall must be sealed. A common oversight is to forget installing firestop caulking or pads around boxes in fire-rated partitions. This will be caught during inspection or life safety review, requiring messy rework if walls are already up.",
+    "Improper Bending: Using the wrong bend radius or making too many bends in a conduit run. If more than 360° of bends exist between pull points (e.g., four 90s), pulling wires will be difficult and it violates code&#8203;:contentReference[oaicite:36]{index=36}. Additionally, crimping conduit with too tight a bend can damage cables. Always use the correct bender shoe and avoid small, unplanned kicks that add up.",
+    "No Separation for Low-Voltage: Running data cables alongside power without separation or in the same conduit can induce noise in the low-voltage system and violate code&#8203;:contentReference[oaicite:37]{index=37}. For example, a CAT6 cable tie-wrapped to a 120V EMT conduit for a long run can pick up interference. Keep communication wiring routes distinct and properly spaced.",
+    "Late Design Changes: Sometimes device locations or circuit requirements change but if an apprentice is unaware, they might install per old plan. Failing to incorporate last-minute changes (like an added outlet or a moved light) is a pitfall that causes rework. Always confirm you have the latest drawings or instructions before rough-in, and double-check with the site supervisor if something seems amiss."
+  ],
+  "coordination": [
+    "HVAC Coordination: Work with HVAC plans to route conduits in a way that doesn't obstruct air ducts or vents. For example, run conduits above ducts or along walls to leave the center of the plenum for large ductwork. Plan lighting locations so they are not directly below ducts that would block maintenance access. Regularly meet with the HVAC team to adjust routing plans as needed.",
+    "Plumbing Coordination: Identify walls that will contain plumbing stacks or large piping and avoid using those same stud bays for thick conduit bundles. Maintain clearances from hot water lines to avoid heating up electrical runs. In the ceiling, do not attach conduits to plumbing hangers. Ensure any floor penetrations for electrical (e.g., conduit sleeves) are planned alongside plumbing penetrations to avoid conflicts in concrete slabs.",
+    "Fire Protection Coordination: Coordinate with the fire sprinkler installer for ceiling work. Keep electrical conduits and junction boxes at least 18 inches away from sprinkler heads to avoid obstructing spray patterns. When installing ceiling boxes for exit signs or strobes, verify they won't conflict with sprinkler piping or heads. If seismic bracing for sprinklers is required, ensure conduits won't interfere with those brace locations.",
+    "Carpentry/Drywall: Communicate with carpenters on any backing needed for electrical panels or heavy fixtures. Ensure stud layouts accommodate large boxes (like server room panels) by possibly doubling studs or adding headers as specified. Before drywall, make sure all device openings are protected (use box covers or masking to keep them clean) and clearly marked for cut-out crews. Provide drywallers with a map of hidden junction box locations that must remain accessible (if any).",
+    "Low-Voltage Contractors: Meet with the data/security cabling team to confirm they can access the conduits and boxes installed. For instance, coordinate on where the security panel is so that all card reader conduits route there logically. Provide them with pull strings and timely notice when site is ready for them to pull cables. Ensure any special needs (like conduits for speaker wires or AV equipment in conference rooms) are addressed to their satisfaction. A smooth hand-off here avoids finger-pointing later.",
+    "Door Hardware: Doors with access control require close coordination. Work with the door/frame supplier to have door frames prepared with cutouts for electric strikes or power transfers. Run the 3/4\" EMT to the secure side of each door frame for card reader and lock cables&#8203;:contentReference[oaicite:38]{index=38}, ending in a protected J-box above the ceiling. Coordinate mounting heights and exact locations of card readers so that conduit stubs out in the correct spot (usually adjacent to the door trim).",
+    "Scheduling & Sequencing: Electrical rough-in should be sequenced after major plumbing and ductwork so that you can route around them, but before insulation and wall closure. Participate in weekly coordination meetings if available to discuss sequence (e.g., electricians might ask plumbers to leave certain areas open until conduits are run). Also coordinate any shutdowns or existing system interruptions with the general contractor to avoid surprises (especially if tying into an existing electrical service or fire alarm)."
+  ]
+}

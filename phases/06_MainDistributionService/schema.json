@@ -1,59 +1,338 @@
 {
-    "key_steps": [
-      "Plan and coordinate with utility and trades",
-      "Receive and inspect main switchgear/switchboard",
-      "Position and assemble gear sections",
-      "Install grounding and bonding connections",
-      "Run service raceways and pull conductors",
-      "Terminate service and feeder cables at gear",
-      "Perform inspections, testing, and energization"
+  "phase_metadata": {
+    "name": "Main Distribution & Service Equipment",
+    "version": "1.0",
+    "description": "Installation of main electrical service equipment including utility connection, main switchgear, generator and ATS integration, grounding and testing, following NEC 2023 and Chicago code requirements.",
+    "last_updated": "2025-04-10"
+  },
+  "scope_of_work": {
+    "title": "Main Distribution & Service Equipment – Scope of Work",
+    "project_phase": "Electrical Service & Emergency Power",
+    "description": "This scope outlines the labor, materials, and installation procedures for the complete Main Electrical Distribution and Emergency Power System for a commercial facility in Chicago. This includes the installation and interconnection of main switchgear, utility service feeders, grounding system, generator, automatic transfer switch (ATS), and emergency panelboard. All work shall comply with NEC 2023, Chicago Electrical Code, and project specifications.",
+    "inclusions": [
+      "Receive and install 3000A, 480Y/277V, 3-phase, 4-wire Main Service Switchgear including main breaker with ground fault protection and digital metering package.",
+      "Pull 8 sets of 4x 500 kcmil copper THHN service conductors in existing 8x 4\" rigid metal conduits from ComEd pad-mounted transformer to main switchgear.",
+      "Bond all service conduits using grounding bushings and install 1/0 copper grounding electrode conductor to existing ground grid in landlord electrical room.",
+      "Install and connect 150 kW outdoor-rated natural gas generator on concrete pad with 2\" rigid galvanized conduit and 4x #3/0 THHN + 1x #6 ground conductors.",
+      "Install 200A, 4-pole Automatic Transfer Switch (ATS) in NEMA 1 enclosure and connect to generator, main gear, and emergency panel EM1 using 2\" RGS and #3/0 feeders.",
+      "Install 200A, 42-space, 480V 3-phase Emergency Panel (EM1) and make all terminations.",
+      "Conduct megger and continuity tests, torque all lugs per manufacturer specs, label gear and panels, and complete commissioning of generator/ATS system.",
+      "Provide grounding and bonding to NEC and Chicago Code standards, including equipment grounding and bonding jumpers.",
+      "Coordinate utility energization with ComEd and schedule all necessary inspections with the Authority Having Jurisdiction (AHJ).",
+      "Provide as-built documentation and torque logs upon project completion."
     ],
-    "materials": [
-      "Main switchboard/switchgear (4000A, 480Y/277V, e.g. Square D, Siemens)",
-      "Service conductors (multiple 500 MCM XHHW cables or bus duct)",
-      "Rigid metal conduits (4\"–5\" RMC/IMC for service entrance)",
-      "Grounding equipment (ground bus, bonding jumpers, ground rods)",
-      "Metering/CT cabinet (per ComEd requirements)",
-      "Hardware (lugs, terminations, anti-oxidant compound, anchors)"
+    "exclusions": [
+      "Excavation, backfill, and pad construction for transformer or generator (by others).",
+      "Natural gas line installation and generator start-up (by generator vendor).",
+      "Programming of generator/ATS controller or integration to BMS/SCADA.",
+      "Fire alarm, telecom, or low-voltage wiring outside of specified emergency power scope."
     ],
-    "code_references": {
-      "NEC": [
-        "230.70(A) – Service disconnect location (nearest point of entry)&#8203;:contentReference[oaicite:0]{index=0}",
-        "230.71 – Max 6 service disconnects grouped together",
-        "230.95 – Ground-fault protection >1000A on 480Y systems&#8203;:contentReference[oaicite:1]{index=1}",
-        "250.24 & 250.28 – Grounding electrode connection & main bonding jumper",
-        "408.3 – Switchboard arrangement & barriers for service sections",
-        "110.26 – Working clearance (3 ft min in front, etc.)"
-      ],
-      "Chicago": [
-        "14E-2-230 – Amendments: disconnect <5ft of entry (indoor)&#8203;:contentReference[oaicite:2]{index=2}",
-        "14E-2-230(A)(5) – High-rise: service in fire-rated electrical room near vault&#8203;:contentReference[oaicite:3]{index=3}",
-        "14E-2-230 – Require metallic raceway for service conductors above grade&#8203;:contentReference[oaicite:4]{index=4}",
-        "230.95 mod – GFPE required on busway feeders ≥1000A (any voltage)&#8203;:contentReference[oaicite:5]{index=5}",
-        "Ch.3 Amendment – All wiring in conduit/metal raceway (typical Chicago practice)&#8203;:contentReference[oaicite:6]{index=6}"
-      ]
-    },
-    "labor_units": [
-      "4 inch EMT conduit: ~16 labor-hours per 100 ft (NECA normal conditions)&#8203;:contentReference[oaicite:7]{index=7}",
-      "Terminating 500 MCM cable: ~0.7 hrs per lug (average conditions)&#8203;:contentReference[oaicite:8]{index=8}",
-      "Installing 4000A switchgear main section: ~30–40 hrs (crew total, est.)&#8203;:contentReference[oaicite:9]{index=9}",
-      "Bus duct installation: ~0.3–0.5 hrs per foot + per joint assembly (varies)"
-    ],
-    "common_pitfalls": [
-      "Improper torque on lugs (loose connections cause overheating)",
-      "Omitting bonding jumper between neutral and ground at service&#8203;:contentReference[oaicite:10]{index=10}",
-      "Insufficient working clearance or egress in electrical room (NEC 110.26)",
-      "Foreign piping/sprinklers over gear without protection (water damage risk)",
-      "Mislabeling or phasing errors on parallel feeds (phase rotation issues)",
-      "Leaving tools/debris inside switchboard (short-circuit hazard)&#8203;:contentReference[oaicite:11]{index=11}"
-    ],
-    "trade_coordination": [
-      "Utility: Schedule ComEd vault/meter installation and energization",
-      "Structural: Verify floor can support gear weight; install housekeeping pad",
-      "HVAC: Provide ventilation or cooling for electrical room (heat dissipation)",
-      "Plumbing: Keep water lines/sprinklers out of or shielded in electrical room",
-      "Fire Protection: Coordinate required room fire rating and any sprinkler exceptions",
-      "General Contractor: Path for bringing in large equipment (door removal, cranes)"
+    "general_conditions": [
+      "All equipment shall be installed per manufacturer instructions and UL/NRTL listings.",
+      "Work to be performed during regular working hours unless otherwise directed.",
+      "All field measurements and equipment clearances to be verified prior to installation.",
+      "Contractor shall follow all site safety protocols and maintain clean, organized work areas."
     ]
-  }
-  
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Utility Service Coordination",
+      "description": "Coordinate with the utility provider (ComEd) for service connections. Schedule any required outages, verify pad-mount transformer (existing) is set and energized by ComEd, and arrange for utility inspection and meter installation before energization."
+    },
+    {
+      "id": 2,
+      "name": "Main Switchgear Installation",
+      "description": "Receive and install the 3000A, 480V 3-phase 4-wire main switchgear. Move gear into electrical room (using forklift or crane as needed), set it in place on pad or floor, level and anchor it per manufacturer instructions. Include internal assembly (if shipping splits) and install accessories (digital meter, relays, etc.) as required."
+    },
+    {
+      "id": 3,
+      "name": "Service Conduit & Feeder Installation",
+      "description": "Install service raceways and conductors from the pad-mount transformer to the main switchgear. For this job, install 8 runs of 4\" rigid metal conduit from the transformer secondary to the gear. Pull 8 sets of 4x 500 kcmil copper THHN conductors (3 phase + 1 neutral per conduit) for the 3000A service. Ensure proper lubrication, pulling tension control, and conduit supports. Bond conduits with grounding bushings at both ends."
+    },
+    {
+      "id": 4,
+      "name": "Grounding and Bonding",
+      "description": "Install the grounding electrode system and bond all equipment. Connect the main switchgear neutral to the building's grounding electrode system (existing ground grid in landlord's electrical room) using appropriately sized grounding electrode conductor (e.g., 1/0 CU for 500 kcmil service conductors per NEC Table 250.66). Bond all service conduits, install ground bars as needed, and ensure the neutral is bonded at the service disconnect (main gear) only (per service entrance requirements). Verify bonding jumpers on concentric knockouts and all metal enclosures are securely installed."
+    },
+    {
+      "id": 5,
+      "name": "Generator and ATS Setup",
+      "description": "Install the 150 kW, 480V 3-phase natural gas generator on its concrete pad (coordinate placement with generator subcontractor). Install the 200A automatic transfer switch (ATS) near the main gear or emergency panel location. Run a 2\" rigid conduit with 4 #3/0 THHN + #6 ground from the main service (normal power source) to the ATS, and another 2\" conduit with 4 #3/0 + #6 ground from the generator to the ATS, and from the ATS to the 200A emergency panel (EM1). Terminate all connections (line, load, generator) in the ATS and wire the EM1 panel from the ATS output. Ensure the ATS neutral is switched or solidly bonded as required by system design (4-pole switching for separate neutral on emergency systems)."
+    },
+    {
+      "id": 6,
+      "name": "Testing and Commissioning",
+      "description": "Perform tests on all installed equipment and wiring. Megger test the service conductors and feeder to the ATS/EM panel for insulation integrity. Perform continuity tests on grounding system. Test the operation of the main breaker including the ground-fault trip (by secondary injection or manufacturer test kit if available). Conduct functional testing of the generator and ATS: simulate power failure to ensure the generator starts and ATS transfers power to the emergency panel properly. Verify phase rotation between normal and generator sources is correct. Document all test results and prepare for inspection."
+    },
+    {
+      "id": 7,
+      "name": "Inspection and Energization",
+      "description": "Coordinate final inspection with the Authority Having Jurisdiction (Chicago electrical inspector) and the utility. Ensure all preceding tasks are complete and compliant. Provide torque logs and test results to inspector if required. Once the installation passes inspection and ComEd gives clearance, perform a safe energization of the service: have all personnel stand clear, remove grounds/shorts, and have the utility or authorized personnel close the transformer secondary to energize the main switchgear. After energization, verify system voltage, phase sequence, and that the main gear, generator, and ATS all operate normally under live conditions (perform a live transfer test if permitted)."
+    }
+  ],
+  "materials": [
+    {
+      "name": "Service Conductors (#500 kcmil Cu THHN)",
+      "quantity": "8 sets of 4 conductors",
+      "description": "Main service feeder cables from transformer to 3000A switchgear. 8 parallel sets of 500 kcmil copper THHN conductors (3 phases + 1 neutral per set) provide the ampacity for 3000A service (approx 8 x 380A per set)."
+    },
+    {
+      "name": "Service Raceways (4\" Rigid Metal Conduit)",
+      "quantity": "8 runs, ~50-100 ft each",
+      "description": "4-inch galvanized rigid metal conduits from pad-mount transformer to main switchgear, containing the service conductors. Chicago code requires rigid metal conduit for all outdoor service runs (EMT/PVC not allowed outdoors). Includes necessary elbows, couplings, and supports."
+    },
+    {
+      "name": "3000A Main Switchgear",
+      "quantity": "1",
+      "description": "Main service switchgear rated 3000A, 480Y/277V, 3-phase 4-wire. Includes a main breaker with ground-fault protection (GFI) set per NEC 230.95, digital metering, and distribution sections. NEMA 1 indoor enclosure, short-circuit rating e.g. 65kA or 100kA to match available fault current."
+    },
+    {
+      "name": "Grounding Electrode Conductor",
+      "quantity": "1 (e.g., 1/0 AWG copper)",
+      "description": "Grounding electrode conductor to connect main switchgear to building grounding electrode system (existing ground grid). Sized per NEC Table 250.66 based on largest service conductor (500 kcmil -> 1/0 Cu required). Includes connectors or exothermic welds for bonding to ground grid, building steel, water pipe, etc."
+    },
+    {
+      "name": "Bonding & Grounding Hardware",
+      "quantity": "Assorted",
+      "description": "Components for bonding and grounding: bonding bushings for 4\" conduits, bonding jumpers (#4 AWG or as required) for concentric knockouts, ground bars for equipment, UL-listed lugs, ground rod clamps (if new ground rods used), and marking tape (green) for ground conductors."
+    },
+    {
+      "name": "150 kW NG Generator",
+      "quantity": "1",
+      "description": "Natural gas emergency generator, 150 kW, 480V 3-phase. Provided with weatherproof enclosure on concrete pad outdoors. To supply backup power to emergency loads via ATS. (Coordination item: typically provided by generator vendor along with start-up services.)"
+    },
+    {
+      "name": "200A Automatic Transfer Switch (ATS)",
+      "quantity": "1",
+      "description": "Automatic Transfer Switch, 200A, 480V 3-phase 4-pole. Transfers emergency panel EM1 between utility source and generator. Must be UL 1008 listed for emergency service. Includes control wiring for generator start signal and status monitoring."
+    },
+    {
+      "name": "200A Emergency Panel (EM1)",
+      "quantity": "1",
+      "description": "480V 3-phase 4-wire panelboard, 200A, fed from the ATS. Supplies critical emergency loads (e.g., life safety systems, egress lighting). NEMA 1 indoor enclosure, branch breakers per load schedule. To be labeled as 'Emergency Panel EM1'."
+    },
+    {
+      "name": "Feeder Conductors (ATS/EM Panel)",
+      "quantity": "As required (approx 3 sets of 4)",
+      "description": "Conductors for connections between main service gear, generator, ATS, and emergency panel. Use 4 conductors (3 phase + neutral) of #3/0 AWG THHN copper for each 200A feeder (plus a #6 AWG green equipment ground in each conduit, per NEC 250.122 for 200A circuit)."
+    },
+    {
+      "name": "Feeder Conduits (2\" Rigid Metal Conduit)",
+      "quantity": "3 runs (length as needed)",
+      "description": "2-inch rigid metal conduits for the 200A feeder runs: one from main power source to ATS, one from generator to ATS, and one from ATS to emergency panel. Includes appropriate fittings and supports. Using rigid metal ensures durability and compliance with Chicago code outdoors or in exposed areas."
+    }
+  ],
+  "tools": [
+    {
+      "name": "Hydraulic Knockout Punch Set",
+      "description": "For cutting precise holes in panels and enclosures (e.g., to punch out for 2\" or 4\" conduit fittings in the switchgear or panelboards)."
+    },
+    {
+      "name": "Hydraulic Pipe Bender",
+      "description": "For bending large conduits (up to 4\" rigid). Necessary for custom bends on site if factory elbows are not sufficient."
+    },
+    {
+      "name": "Cable Tugger (Motorized Puller)",
+      "description": "Power puller device for pulling heavy conductors like 500 kcmil through conduits. Reduces strain and helps maintain steady pulling force."
+    },
+    {
+      "name": "Chain Hoist / Crane / Forklift",
+      "description": "Lifting equipment for hoisting heavy gear (such as the switchgear sections, transformer if needed, or generator components) into place safely."
+    },
+    {
+      "name": "Megohmmeter (Insulation Tester)",
+      "description": "For megger testing insulation resistance of conductors and motor windings. Used before energization to ensure no insulation damage."
+    },
+    {
+      "name": "Multimeter & Phasing Tester",
+      "description": "Digital multimeter for voltage measurements and a phase rotation meter to verify phase sequence (ABC rotation) between sources."
+    },
+    {
+      "name": "Torque Wrench (Calibrated)",
+      "description": "For tightening lugs, bolts, and bus connections to specified torque values per manufacturer. Ensures secure electrical connections."
+    },
+    {
+      "name": "Personal Protective Equipment (PPE)",
+      "description": "Safety gear such as hard hats, safety glasses, voltage-rated gloves, hearing protection, and arc flash suits (to be worn as required during various tasks)."
+    }
+  ],
+  "safety": [
+    {
+      "name": "Personal Protective Equipment (PPE)",
+      "description": "Always wear appropriate PPE: hard hat, safety glasses, and gloves as basic protection, and use arc-rated clothing for any work near energized equipment. For high-energy panels (480V), an arc flash suit (Category 3 or 4, ~25+ cal/cm^2) may be required during energized work."
+    },
+    {
+      "name": "Lockout-Tagout (LOTO)",
+      "description": "Before working on electrical equipment, ensure it is de-energized and apply lockout-tagout per OSHA 29 CFR 1910.147 procedures. Each worker should attach a personal lock and tag to the disconnecting means to prevent re-energization."
+    },
+    {
+      "name": "Working Near Energized Equipment",
+      "description": "Avoid live work whenever possible. If it is absolutely necessary (testing or troubleshooting), follow NFPA 70E safe work practices: wear proper arc flash PPE, use insulated tools, maintain safe approach distances, and have a safety observer. Always verify absence of voltage with a tester before touching conductors."
+    },
+    {
+      "name": "Heavy Lifting and Rigging",
+      "description": "When moving or lifting heavy equipment like switchgear sections, transformers, or generators, use proper rigging techniques and equipment (cranes, forklifts, hoists). Ensure load is balanced and use tag lines to guide. Keep personnel clear of suspended loads. Follow OSHA guidelines for crane and rigging safety."
+    },
+    {
+      "name": "Arc Flash Awareness",
+      "description": "Be aware of arc flash hazards during switching or fault conditions. Stand to the side of gear when switching breakers on. Use remote racking devices for breakers if available. Ensure arc flash warning labels are posted on equipment per NEC 110.16 and heed the required PPE level indicated."
+    },
+    {
+      "name": "Site Orientation and Training",
+      "description": "All workers and especially apprentices should attend site-specific safety orientation. Understand the emergency procedures, exit routes, and equipment shut-off locations. Continuously seek additional training on electrical safety (OSHA 10/30, NFPA 70E courses) and never hesitate to ask questions or consult a supervisor when unsure."
+    }
+  ],
+  "quality_control": [
+    {
+      "name": "Torque Verification Logs",
+      "description": "After installing conductors and bus connections, use a calibrated torque wrench to tighten all lugs and bolts to manufacturer-specified torque values. Log each connection (date, person, torque value) for QA records. Inspectors or project QA may review these torque logs."
+    },
+    {
+      "name": "Grounding Continuity Test",
+      "description": "Test the continuity of the grounding system. Using an ohmmeter, verify that all equipment enclosures, conduits, and grounding electrode connections are bonded with near-zero resistance. Perform a ground electrode resistance test (fall-of-potential or clamp-on meter) to ensure the building ground network impedance is within acceptable range (often 5 ohms or less for commercial systems)."
+    },
+    {
+      "name": "Phasing and Phase Rotation Check",
+      "description": "Verify that all phase connections are correctly landed (e.g., A, B, C phase from the transformer correspond to A, B, C in the switchgear). Use a phase rotation meter to ensure the phase rotation is ABC (or the required sequence) especially when integrating the generator through the ATS, to prevent rotation mismatch that could damage 3-phase motors."
+    },
+    {
+      "name": "Equipment Labeling and Identification",
+      "description": "Ensure all panels, switchgear, and disconnects are properly labeled with identifiers (e.g., 'Main Switchgear', 'Panel EM1') and voltage warnings. Verify that arc flash warning labels are installed on the main gear and emergency panel (NEC 110.16 requirement). Check that circuit directories (panel schedules) are accurate and in place for all panels."
+    },
+    {
+      "name": "Short-Circuit Rating Verification",
+      "description": "Confirm that the installed switchgear, breaker panels, and ATS have adequate short-circuit current ratings (AIC) to handle the prospective fault current from the utility. For example, if the utility fault current at the service is 65kA, all components in the fault path (main breaker, bus, ATS, panel) should be rated >= 65kA. Document the available fault current (from utility data) and equipment ratings for inspector review."
+    },
+    {
+      "name": "Functional Testing",
+      "description": "Perform functional tests: for the generator and ATS (simulate power failure, ensure automatic start and transfer), emergency lighting circuits (simulate outage to see if they come on), and main breaker trip (test shunt trip or ground fault trip functions with test kit). Any issues discovered should be corrected and re-tested. Ensure all test results meet specifications and are recorded."
+    }
+  ],
+  "timeline": {
+    "sequence": [
+      "Transformer Pad & Vault Preparation",
+      "Utility Transformer Installation",
+      "Main Switchgear Delivery & Placement",
+      "Service Conduit and Wire Installation",
+      "Grounding System Installation",
+      "Generator and ATS Installation",
+      "Inspection (Rough-in and Final)",
+      "Energization & Commissioning"
+    ],
+    "dependencies": [
+      "Concrete pad for the transformer (and generator) must be poured and cured before those units are installed.",
+      "Utility (ComEd) must install and energize the pad-mount transformer before the building service can be energized.",
+      "Main switchgear should be in place and secured before pulling service conductors to it (to avoid rework or alignment issues).",
+      "All conduit and cable installations should be completed and terminations done before requesting electrical inspection.",
+      "Generator installation (by generator subcontractor) including gas hookup must be completed before final commissioning of the emergency system.",
+      "Fire alarm and life safety systems should be verified operational on backup power prior to final inspection (if emergency panel feeds life safety loads).",
+      "Utility coordination: final energization should be scheduled after passing AHJ inspection; typically the utility will not connect power until they see the green tag or approval from the city inspector."
+    ]
+  },
+  "code_references": [
+    {
+      "reference": "NEC 2023 - Article 230 (Services)",
+      "description": "General requirements for service conductors and equipment. Limits to one service disconnect (except permitted exceptions), requires grouping of service disconnects, and dictates service equipment installation rules (like barrier requirements and service conductor protection)."
+    },
+    {
+      "reference": "NEC 2023 - Article 250 (Grounding and Bonding)",
+      "description": "Requirements for grounding electrode systems and bonding. Includes sizing of grounding electrode conductors (Table 250.66) and equipment grounding conductors (Table 250.122), types of acceptable grounding electrodes (building steel, ground rods, etc.), and bonding requirements for metal enclosures and raceways."
+    },
+    {
+      "reference": "NEC 2023 - Article 408 (Switchboards and Panelboards)",
+      "description": "Covers construction and installation of switchgear and panelboards. For example, requires all openings (knockouts) to be closed, busbars to be arranged A-B-C from front left to right or top to bottom, and that switchgear is installed in a neat and workmanlike manner."
+    },
+    {
+      "reference": "NEC 2023 - Article 700 (Emergency Systems)",
+      "description": "Covers emergency power systems (legally required for life safety). Requires automatic and manual load transfer means, periodic testing (e.g., monthly generator tests), separation of emergency wiring from other wiring, and specific equipment ratings and approvals for emergency use (e.g., UL 1008 for ATS)."
+    },
+    {
+      "reference": "NEC 2023 - Article 701 (Legally Required Standby)",
+      "description": "Covers standby systems required by code (not as critical as emergency systems, but required for safety of property or business operations, e.g., backup for heating systems in hazardous areas). Similar rules to Article 700 but slightly less stringent separation requirements."
+    },
+    {
+      "reference": "Chicago Electrical Code (Amendments to NEC)",
+      "description": "Chicago has local amendments to the NEC. For example, Chicago often requires all feeders in conduit (no NM cable), and rigid metal conduit for any outdoor or service entrance raceways. Also, stricter rules on grounding (e.g., require bonding jumpers on all conduit terminations) and possibly requires AFCI/GFCI in more situations. Always refer to the latest City of Chicago Electrical Code for specifics."
+    },
+    {
+      "reference": "NEC 2023 - Article 110.9 & 110.10",
+      "description": "Ensure that protective devices have adequate interrupting rating and equipment have sufficient short-circuit current rating for the available fault current. This means obtaining available fault current data from the utility and selecting equipment (breakers, gear, ATS) that can safely withstand/interrupt that current."
+    },
+    {
+      "reference": "NEC 2023 - Article 230.95",
+      "description": "Requires Ground-Fault Protection of Equipment (GFPE) on services over 1000A for 480Y/277V systems. The 3000A main switchgear in this case must have a main device with GFPE to protect against ground faults, set no higher than 1200A and with intentional delay per code to allow coordination."
+    },
+    {
+      "reference": "NFPA 70E & OSHA 29 CFR 1910 (Electrical Safety)",
+      "description": "NFPA 70E (2024 edition) provides guidelines for safe work practices including arc flash hazard analysis and PPE categories. OSHA regulations (29 CFR 1910 Subpart S and specifically 1910.147 for LOTO) enforce that employers and workers follow these safety practices to prevent electrical accidents."
+    }
+  ],
+  "labor_units": [
+    {
+      "task": "4\" Rigid Conduit Install (per linear foot)",
+      "labor_hours": 0.5,
+      "description": "Approximately 0.5 labor hours per foot of 4\" RMC installed (includes cutting, threading, bending, hanging supports, and pulling in place by a crew). For 100 ft, ~50 labor-hours (crew total) may be expected."
+    },
+    {
+      "task": "500 MCM Cable Pulling (per foot, per cable)",
+      "labor_hours": 0.1,
+      "description": "Roughly 0.1 labor hours per foot for a single 500 kcmil cable pull under good conditions with a tugger and a team. For a 100 ft pull with 4 cables in one conduit, estimate ~40 labor-hours (multiple workers over the pulling duration)."
+    },
+    {
+      "task": "Switchgear Installation (3000A)",
+      "labor_hours": 32,
+      "description": "Estimated 32 labor hours to set and install a large switchgear assembly (crew of 4 taking one day). Includes unloading, positioning, anchoring, and assembling sections."
+    },
+    {
+      "task": "Generator & ATS Electrical Install",
+      "labor_hours": 24,
+      "description": "About 24 labor hours to install and wire the generator connections, ATS, and emergency panel (excluding generator set assembly which is by vendor). This includes mounting the ATS, running conduits and wires, and terminations."
+    },
+    {
+      "task": "Grounding and Bonding",
+      "labor_hours": 12,
+      "description": "Approximately 12 labor hours to install ground rods (if needed), connect to building steel/water pipe, run bonding jumpers, and terminate all grounding connections for the service and generator system."
+    },
+    {
+      "task": "Testing and Commissioning",
+      "labor_hours": 16,
+      "description": "Roughly 16 labor hours for a team to perform megger tests, functional tests of ATS/generator, and complete all checks and documentation. Complex systems may take more time if issues are found."
+    }
+  ],
+  "common_pitfalls": [
+    "Reversing phase rotation (connecting phases out of order) which can cause motors to run backwards on startup.",
+    "Failure to bond neutral properly at service equipment, or leaving the neutral-ground bonding jumper in downstream panels (causing parallel neutral paths).",
+    "Not installing bonding bushings on metal conduits entering the service gear (leading to an unbonded service raceway which is a code violation and safety hazard).",
+    "Overtightening or stripping lugs and bolts by not using a torque wrench, which can damage equipment or result in poor connections.",
+    "Insufficient support for heavy vertical conduits or cables, leading to sagging conduits or stress on terminations (NEC requires supports within 3 ft of enclosures for raceways, etc.).",
+    "Ignoring manufacturer instructions (for example, not installing required barriers or forgetting to remove shipping brackets in the switchgear), which can void listings or cause malfunctions.",
+    "Missing coordination of breaker settings - e.g., not adjusting the ground-fault trip on the main, which could lead to nuisance trips or lack of proper protection.",
+    "Skipping a full test of the generator and ATS under load, only to find out during a real outage that something was wired incorrectly or fails to start."
+  ],
+  "coordination": [
+    "Utility Coordination: Work closely with ComEd for scheduling any required shutdowns and the final cut-in. ComEd typically handles the transformer installation and meter, but you must provide timely notifications and ensure site readiness for their work.",
+    "Structural Coordination: Ensure concrete pads for the transformer and generator are built to specification (size, rebar, grounding electrodes in concrete if required) by the general contractor. Verify clearances around these pads (for maintenance and code) are maintained.",
+    "Generator Vendor: Coordinate with the generator supplier or subcontractor on fuel connections (natural gas line sizing and tie-in), control wiring, battery installation, and commissioning. The vendor often needs to perform startup and load testing; schedule this before final inspection.",
+    "HVAC: Large indoor switchgear may need room ventilation or cooling (to dissipate heat). Coordinate with HVAC contractors to install exhaust fans or louvers if required by code or equipment specs. Similarly, if a generator is in an enclosure room, ensure proper ventilation for combustion air and exhaust.",
+    "Fire Alarm/Life Safety: If the emergency panel feeds life safety systems (lights, fire pump, alarm), coordinate so that the fire alarm panel is programmed to monitor generator running/failure signals and that emergency lights are properly circuited to emergency panel. Fire department or life safety inspectors may need to witness tests of these systems on generator power.",
+    "Scheduling: Plan the sequence of work with the general contractor and other trades (e.g., concrete work, roofing if penetrations needed for exhaust, etc.). For example, ensure roofing is complete before installing rooftop generator exhaust piping or that wall openings for conduits are coordinated with masonry work.",
+    "Safety Coordination: Inform all crews of high-risk activities like energization day. Coordinate with everyone on site to stay clear of equipment during testing and energization. Ensure the safety plan (like evac in case of an arc flash or other incident) is communicated and in place."
+  ],
+  "arc_flash_considerations": [
+    "Conduct an arc flash study (often done by an engineer) to determine incident energy levels at the main gear, ATS, and panels. Post arc flash labels on each equipment listing the incident energy or required PPE category at a given working distance.",
+    "Use current limiting devices or faster trip settings where possible to reduce arc flash energy. For instance, zone-selective interlocking (ZSI) on the ground-fault or other protection can reduce clearing time for faults, lowering arc energy.",
+    "Ensure all workers understand arc flash boundaries: the approach limits and the requirement to wear appropriate PPE within those boundaries. Establish a habit that nobody opens an energized panel or switches gear without proper arc flash gear and a risk assessment briefing.",
+    "During commissioning, perform infrared scanning (thermography) on the main connections under load (once energized) to check for hot spots, which can indicate loose connections that could lead to faults or arc flash events if not corrected.",
+    "Include arc flash and electrical emergency response in apprentice training. Apprentices should be aware of how to respond to an electrical accident or arc flash (e.g., know where the nearest disconnect is, how to use a fire extinguisher on electrical fires, and first aid measures for electrical burns)."
+  ],
+  "additional_resources": [
+    "NECA Manual of Labor Units – provides standard labor hour references for various electrical installation tasks to help in planning and estimating.",
+    "NFPA 70 (NEC) 2023 Handbook – offers commentary on code articles (230, 250, 408, 700, etc.) with illustrations; great for deeper understanding of the requirements.",
+    "City of Chicago Electrical Code – official publication of Chicago's amendments to the NEC. It outlines all differences and specific local rules (available via the Chicago Building Department).",
+    "NFPA 70E (Electrical Safety) – covers safe work practices, required PPE for different electrical tasks, and arc flash training guidelines.",
+    "OSHA Standard 1910.147 (Lockout/Tagout) and 1926 (Construction Electrical Safety) – important regulations to know for maintaining a safe job site.",
+    "Electrical Apprenticeship Training Manuals (NJATC/IECI) – these often contain modules on service installation, grounding, switchgear, and safety which can provide more context and exercises.",
+    "Manufacturer Documentation – e.g., installation guides for switchgear, ATS, and generator (for specific wiring diagrams, torque specs, and testing procedures). Reading these ensures compliance with warranty and listing."
+  ]
+}
